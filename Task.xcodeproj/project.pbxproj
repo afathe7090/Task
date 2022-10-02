@@ -19,6 +19,9 @@
 		74815A0A28E9822200DAB0DF /* TTStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0928E9822200DAB0DF /* TTStackView.swift */; };
 		74815A0C28E9823100DAB0DF /* TTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0B28E9823100DAB0DF /* TTTextField.swift */; };
 		74815A0E28E9823800DAB0DF /* TTImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0D28E9823800DAB0DF /* TTImageVIew.swift */; };
+		74A6CC6F28E9BBBB006F5DF7 /* TTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6CC6E28E9BBBB006F5DF7 /* TTLabel.swift */; };
+		74A6CC7228E9BF51006F5DF7 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6CC7128E9BF51006F5DF7 /* UIFont+Ext.swift */; };
+		74A6CC7428E9C065006F5DF7 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6CC7328E9C065006F5DF7 /* UIImage+Ext.swift */; };
 		74EEACC428E8C2D60001ED97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEACC328E8C2D60001ED97 /* AppDelegate.swift */; };
 		74EEACC628E8C2D60001ED97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEACC528E8C2D60001ED97 /* SceneDelegate.swift */; };
 		74EEACCD28E8C2D80001ED97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74EEACCC28E8C2D80001ED97 /* Assets.xcassets */; };
@@ -39,6 +42,9 @@
 		74815A0928E9822200DAB0DF /* TTStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTStackView.swift; sourceTree = "<group>"; };
 		74815A0B28E9823100DAB0DF /* TTTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTextField.swift; sourceTree = "<group>"; };
 		74815A0D28E9823800DAB0DF /* TTImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTImageVIew.swift; sourceTree = "<group>"; };
+		74A6CC6E28E9BBBB006F5DF7 /* TTLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTLabel.swift; sourceTree = "<group>"; };
+		74A6CC7128E9BF51006F5DF7 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		74A6CC7328E9C065006F5DF7 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		74EEACC028E8C2D60001ED97 /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EEACC328E8C2D60001ED97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74EEACC528E8C2D60001ED97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,7 @@
 		7451D62328E9815000CB21C2 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				74A6CC6D28E9BBAB006F5DF7 /* UILabel */,
 				7451D62828E9818400CB21C2 /* UIImageView */,
 				7451D62728E9817600CB21C2 /* UITextField */,
 				7451D62628E9816C00CB21C2 /* UIStackView */,
@@ -223,6 +230,23 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
+		74A6CC6D28E9BBAB006F5DF7 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				74A6CC6E28E9BBBB006F5DF7 /* TTLabel.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		74A6CC7028E9BF41006F5DF7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				74A6CC7128E9BF51006F5DF7 /* UIFont+Ext.swift */,
+				74A6CC7328E9C065006F5DF7 /* UIImage+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		74EEACB728E8C2D60001ED97 = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +268,7 @@
 		74EEACC228E8C2D60001ED97 /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				74A6CC7028E9BF41006F5DF7 /* Extension */,
 				7451D62328E9815000CB21C2 /* CustomViews */,
 				7469F3D128E8C43400ABB804 /* Modules */,
 				7469F3D028E8C42500ABB804 /* Support */,
@@ -393,9 +418,12 @@
 				7469F3E528E8C7B600ABB804 /* TwitterLoginViewController.swift in Sources */,
 				7469F3E128E8C53A00ABB804 /* TwitterLoginRepoImplementaion.swift in Sources */,
 				74EEACC628E8C2D60001ED97 /* SceneDelegate.swift in Sources */,
+				74A6CC7428E9C065006F5DF7 /* UIImage+Ext.swift in Sources */,
+				74A6CC7228E9BF51006F5DF7 /* UIFont+Ext.swift in Sources */,
 				7451D62A28E981AE00CB21C2 /* TTView.swift in Sources */,
 				74815A0E28E9823800DAB0DF /* TTImageVIew.swift in Sources */,
 				7469F3DB28E8C4E500ABB804 /* TwitterLoginRepo.swift in Sources */,
+				74A6CC6F28E9BBBB006F5DF7 /* TTLabel.swift in Sources */,
 				74815A0A28E9822200DAB0DF /* TTStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

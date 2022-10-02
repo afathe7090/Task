@@ -17,7 +17,6 @@ protocol TwitterViewDelegate: AnyObject {
 class TwitterLoginView: UIView {
     
     
-    
     private weak var delegate: TwitterViewDelegate!
 
     
@@ -31,150 +30,54 @@ class TwitterLoginView: UIView {
         return scroll
     }()
     
-    private lazy var containerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .clear
-        return view
-    }()
-    
-    private lazy var twitterImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "twitter")
-        imageView.contentMode = .scaleToFill
-        return imageView
-    }()
-    
-    private lazy var titleLabel: UILabel = {
-        let lbl = UILabel()
-        lbl.font = UIFont(name: "Palatino Bold", size: 30)
-        lbl.textAlignment = .center
-        lbl.text = "Sign in by Twitter"
-        return lbl
-    }()
+    let containerView = TTView(color: .clear)
+    let twitterImageView = TTImageView(image: .twitter_img)
+    let titleLabel = TTLabel(text: "Sign in by Twitter", font: .palatino_bold_twitter, textAlignment: .center)
+
     
     //-----------------------------------------------------------------------------------
     //=======>MARK: -  Gmail
     //-----------------------------------------------------------------------------------
     
-    private lazy var gmailView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor.lightGray.cgColor
-        view.layer.cornerRadius = 30
-        return view
-    }()
     
-    private lazy var siginGmailLabel: UILabel =  {
-        let lbl = UILabel()
-        lbl.font = UIFont(name: "Palatino Bold", size: 18)
-        lbl.textAlignment = .center
-        lbl.textColor = .black
-        lbl.text = "Sign in with google"
-        return lbl
-    }()
+    let gmailView       = TTView(color: .white, borderColor: .lightGray, borderWidth: 1, cornerRadius: 30)
+    let siginGoogleLabel = TTLabel(text: "Sign in with google", font: .palatino_bold, textAlignment: .center, textColor: .black)
+    let googleImageView = TTImageView(image: .google_img , height: 30,width: 30)
     
-    
-    private lazy var googleImageView: UIImageView = {
-        let image = UIImageView(frame: .zero)
-        image.contentMode = .scaleToFill
-        image.image = UIImage(named: "google")
-        image.widthAnchor.constraint(equalToConstant: 30).isActive = true
-        image.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        return image
-    }()
-    
-    private lazy var googleStack: UIStackView = {
-        let arrangedSubView = [googleImageView, siginGmailLabel]
-        let stackView = UIStackView(arrangedSubviews: arrangedSubView)
-        stackView.axis = .horizontal
-        stackView.contentMode = .scaleToFill
-        stackView.spacing = 0
-        stackView.alignment = .center
-        return stackView
+    private lazy var googleStack: TTStackView = {
+        let arrangedSubView = [googleImageView, siginGoogleLabel]
+        let googleStack = TTStackView(arrangedSubView: arrangedSubView, spacing: 0, axis: .horizontal, contentMode: .scaleToFill, alignment: .center)
+        return googleStack
     }()
     
     //-----------------------------------------------------------------------------------
     //=======>MARK: -  apple
     //-----------------------------------------------------------------------------------
     
-    private lazy var appleView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor.lightGray.cgColor
-        view.layer.cornerRadius = 30
-        return view
-    }()
+    let appleView       = TTView(color: .white, borderColor: .lightGray, borderWidth: 1, cornerRadius: 30)
+    let siginAppleLabel = TTLabel(text: "Sign in with apple", font: .palatino_bold, textAlignment: .center, textColor: .black)
+    let appleImageView  = TTImageView(image: .apple_img , height: 30,width: 30)
     
-    private lazy var siginAppleLabel: UILabel =  {
-        let lbl = UILabel()
-        lbl.textColor = .black
-        lbl.font = UIFont(name: "Palatino Bold", size: 18)
-        lbl.textAlignment = .center
-        lbl.text = "Sign in with apple"
-        return lbl
-    }()
-    
-    
-    private lazy var appleImageView: UIImageView = {
-        let image = UIImageView(frame: .zero)
-        image.contentMode = .scaleToFill
-        image.image = UIImage(named: "apple")
-        image.tintColor = .black
-        image.widthAnchor.constraint(equalToConstant: 30).isActive = true
-        image.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        return image
-    }()
-    
-    private lazy var appleStack: UIStackView = {
+    private lazy var appleStack: TTStackView = {
         let arrangedSubView = [appleImageView, siginAppleLabel]
-        let stackView = UIStackView(arrangedSubviews: arrangedSubView)
-        stackView.axis = .horizontal
-        stackView.contentMode = .scaleToFill
-        stackView.spacing = 0
-        stackView.alignment = .center
-        return stackView
+        let appleStack = TTStackView(arrangedSubView: arrangedSubView, spacing: 0, axis: .horizontal, contentMode: .scaleToFill, alignment: .center)
+        return appleStack
     }()
-    
-    
-    
     
     
     //-----------------------------------------------------------------------------------
     //=======>MARK: -separator
     //-----------------------------------------------------------------------------------
-    private lazy var rightSeparator: UIView = {
-        let view = UIView()
-        view.backgroundColor = .lightGray
-        view.heightAnchor.constraint(equalToConstant: 1).isActive = true
-        return view
-    }()
     
     
-    private lazy var leftSeparator: UIView = {
-        let view = UIView()
-        view.backgroundColor = .lightGray
-        view.heightAnchor.constraint(equalToConstant: 1).isActive = true
-        return view
-    }()
+    let rightSeparator = TTView(color: .lightGray , height: 1)
+    let leftSeparator = TTView(color: .lightGray , height: 1)
+    let orLabel = TTLabel(text: "Or", textAlignment: .center)
     
-    private lazy var orLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Or"
-        label.font = .systemFont(ofSize: 17)
-        label.textAlignment = .center
-        return label
-    }()
-    
-    private lazy var separatorStack: UIStackView =  {
+    private lazy var separatorStack: TTStackView = {
         let arrangedSubView = [leftSeparator, orLabel,rightSeparator]
-        let stackView = UIStackView(arrangedSubviews: arrangedSubView)
-        stackView.axis = .horizontal
-        stackView.distribution = .fillEqually
-        stackView.spacing = 0
-        stackView.alignment = .center
-        return stackView
+        let separatorStack = TTStackView(arrangedSubView: arrangedSubView, spacing: 0, axis: .horizontal, contentMode: .scaleToFill, alignment: .center ,distribution: .fillEqually)
+        return separatorStack
     }()
     
     
