@@ -15,7 +15,6 @@
 		7469F3E528E8C7B600ABB804 /* TwitterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469F3E428E8C7B600ABB804 /* TwitterLoginViewController.swift */; };
 		7469F3E728E8C8E900ABB804 /* TwitterLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469F3E628E8C8E900ABB804 /* TwitterLoginView.swift */; };
 		7469F3E828E8CFE900ABB804 /* Pods_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2974586E93B5C35A386CBE90 /* Pods_Task.framework */; };
-		7469F3E928E8CFE900ABB804 /* Pods_Task.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2974586E93B5C35A386CBE90 /* Pods_Task.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74815A0828E9821800DAB0DF /* TTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0728E9821800DAB0DF /* TTButton.swift */; };
 		74815A0A28E9822200DAB0DF /* TTStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0928E9822200DAB0DF /* TTStackView.swift */; };
 		74815A0C28E9823100DAB0DF /* TTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0B28E9823100DAB0DF /* TTTextField.swift */; };
@@ -25,20 +24,6 @@
 		74EEACCD28E8C2D80001ED97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74EEACCC28E8C2D80001ED97 /* Assets.xcassets */; };
 		74EEACD028E8C2D80001ED97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74EEACCE28E8C2D80001ED97 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		7469F3EA28E8CFE900ABB804 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7469F3E928E8CFE900ABB804 /* Pods_Task.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2974586E93B5C35A386CBE90 /* Pods_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -297,7 +282,6 @@
 				74EEACBD28E8C2D60001ED97 /* Frameworks */,
 				74EEACBE28E8C2D60001ED97 /* Resources */,
 				7B91F09F97B2895B3AE3F41B /* [CP] Embed Pods Frameworks */,
-				7469F3EA28E8CFE900ABB804 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
