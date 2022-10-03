@@ -85,6 +85,12 @@ class TwitterLoginView: UIView {
     let passwordTextField = TTTextField(fontSiza: 17, placeholder: "Password",
                                      placeholderFont: .systemFont(ofSize: 17), placeholderColor: .darkGray)
     
+    private lazy var textFieldsStack: TTStackView = {
+        let arrangedSubView = [emailTextField, passwordTextField]
+        let separatorStack = TTStackView(arrangedSubView: arrangedSubView, spacing: 25, axis: .vertical, contentMode: .scaleToFill, alignment: .fill ,distribution: .fillEqually)
+        return separatorStack
+    }()
+    
     
     
     //-----------------------------------------------------------------------------------
@@ -175,22 +181,16 @@ class TwitterLoginView: UIView {
     }
     
     fileprivate func configureEmailANdPasswordView(){
-        containerView.addSubview(emailTextField)
-        emailTextField.snp.makeConstraints({
+        containerView.addSubview(textFieldsStack)
+        textFieldsStack.snp.makeConstraints({
             $0.top.equalTo(separatorStack.snp.bottom).offset(15)
             $0.leading.equalTo(containerView.snp.leading).offset(20)
             $0.trailing.equalTo(containerView.snp.trailing).offset(-20)
-            $0.height.equalTo(50)
-            
         })
-//
-        containerView.addSubview(passwordTextField)
-        passwordTextField.snp.makeConstraints({
-            $0.top.equalTo(emailTextField.snp.bottom).offset(25)
-            $0.leading.equalTo(containerView.snp.leading).offset(20)
-            $0.trailing.equalTo(containerView.snp.trailing).offset(-20)
-            $0.height.equalTo(50)
-        })
+        
+    }
+    
+    fileprivate func configureSignINButton(){
         
     }
     

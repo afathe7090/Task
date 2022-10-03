@@ -25,7 +25,8 @@ class TTTextField: UITextField {
         clipsToBounds           = true
         self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 20))
         self.leftViewMode = .always
-//        
+        
+        heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.layer.cornerRadius = 8
         
     }
