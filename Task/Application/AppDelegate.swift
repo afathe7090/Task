@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,10 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//        window = UIWindow()
-//        let rootViewController = TwitterLoginViewController()
-//        window?.rootViewController = rootViewController
-//        window?.makeKeyAndVisible()
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.keyboardAppearance = .default
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 50.0
         return true
     }
 

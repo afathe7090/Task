@@ -24,12 +24,6 @@ class TwitterLoginView: UIView {
     //=======>MARK: -  Layout
     //-----------------------------------------------------------------------------------
     
-    private lazy var scrollVIew: UIScrollView = {
-        let scroll = UIScrollView()
-        scroll.backgroundColor = .clear
-        return scroll
-    }()
-    
     let containerView = TTView(color: .clear)
     let twitterImageView = TTImageView(image: .twitter_img)
     let titleLabel = TTLabel(text: "Sign in by Twitter", font: .palatino_bold_twitter, textAlignment: .center)
@@ -85,21 +79,11 @@ class TwitterLoginView: UIView {
     //-----------------------------------------------------------------------------------
     //=======>MARK: -  Fields
     //-----------------------------------------------------------------------------------
-    private lazy var emailTextField: UITextField = {
-        let textField = UITextField()
-        return textField
-    }()
     
-    private lazy var passwordTextField: UITextField = {
-        let textField = UITextField()
-        return textField
-    }()
-    
-    private lazy var fieldsStack: UIStackView = {
-        let arrangedSubView: [UIView] = [emailTextField , passwordTextField]
-        let stackView = UIStackView(arrangedSubviews: arrangedSubView)
-        return stackView
-    }()
+    let emailTextField = TTTextField(fontSiza: 17, placeholder: "Phone, email, or username",
+                                     placeholderFont: .systemFont(ofSize: 17), placeholderColor: .darkGray)
+    let passwordTextField = TTTextField(fontSiza: 17, placeholder: "Password",
+                                     placeholderFont: .systemFont(ofSize: 17), placeholderColor: .darkGray)
     
     
     
@@ -115,6 +99,7 @@ class TwitterLoginView: UIView {
         configureGoogleView()
         configureAppleView()
         configureSeparatorViews()
+        configureEmailANdPasswordView()
     }
     
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
@@ -122,16 +107,11 @@ class TwitterLoginView: UIView {
     //-----------------------------------------------------------------------------------
     //=======>MARK: -  Layout
     //-----------------------------------------------------------------------------------
-   
     
     fileprivate func configureContainerView(){
-        addSubview(scrollVIew)
-        scrollVIew.snp.makeConstraints({$0.edges.equalTo(self.snp.edges)})
-        
-        scrollVIew.addSubview(containerView)
+        addSubview(containerView)
         containerView.snp.makeConstraints({
-            $0.edges.equalTo(scrollVIew.snp.edges)
-            $0.width.equalTo(scrollVIew.snp.width).multipliedBy(1)
+            $0.edges.equalTo(snp.edges)
         })
     }
     
@@ -195,6 +175,24 @@ class TwitterLoginView: UIView {
     }
     
     fileprivate func configureEmailANdPasswordView(){
+        containerView.addSubview(emailTextField)
+        emailTextField.snp.makeConstraints({
+            $0.top.equalTo(separatorStack.snp.bottom).offset(15)
+            $0.leading.equalTo(containerView.snp.leading).offset(20)
+            $0.trailing.equalTo(containerView.snp.trailing).offset(-20)
+            $0.height.equalTo(50)
+            
+        })
+//
+        containerView.addSubview(passwordTextField)
+        passwordTextField.snp.makeConstraints({
+            $0.top.equalTo(emailTextField.snp.bottom).offset(25)
+            $0.leading.equalTo(containerView.snp.leading).offset(20)
+            $0.trailing.equalTo(containerView.snp.trailing).offset(-20)
+            $0.height.equalTo(50)
+        })
         
     }
+    
 }
+
