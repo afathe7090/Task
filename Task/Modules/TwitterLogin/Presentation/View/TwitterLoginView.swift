@@ -7,10 +7,11 @@
 
 import UIKit
 import SnapKit
-
+import Combine
+import CombineCocoa
 
 protocol TwitterViewDelegate: AnyObject {
-    
+    func didTapLoginPublisher(_ tap: AnyPublisher<Void, Never>)
 }
 
 
@@ -18,25 +19,42 @@ class TwitterLoginView: UIView {
     
     
     private weak var delegate: TwitterViewDelegate!
-
+    
     
     //-----------------------------------------------------------------------------------
     //=======>MARK: -  Layout
     //-----------------------------------------------------------------------------------
     
-    let containerView = TTView(color: .clear)
-    let twitterImageView = TTImageView(image: .twitter_img)
-    let titleLabel = TTLabel(text: "Sign in by Twitter", font: .palatino_bold_twitter, textAlignment: .center)
-
+    private lazy var  scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.backgroundColor = .clear
+        return scrollView
+    }()
+    
+    private let containerView = TTView(color: .clear)
+    private let twitterImageView = TTImageView(image: .twitter_img)
+    private let titleLabel = TTLabel(text: "Sign in by Twitter", font: .palatino_bold_twitter, textAlignment: .center)
+    
     
     //-----------------------------------------------------------------------------------
     //=======>MARK: -  Gmail
     //-----------------------------------------------------------------------------------
     
     
-    let gmailView       = TTView(color: .white, borderColor: .lightGray, borderWidth: 1, cornerRadius: 30)
-    let siginGoogleLabel = TTLabel(text: "Sign in with google", font: .palatino_bold, textAlignment: .center, textColor: .black)
-    let googleImageView = TTImageView(image: .google_img , height: 30,width: 30)
+    private let gmailView        = TTView(color: .white,
+                                          borderColor: .lightGray,
+                                          borderWidth: 1,
+                                          cornerRadius: 30)
+    
+    private let siginGoogleLabel = TTLabel(text: "Sign in with google",
+                                           font: .palatino_bold
+                                           , textAlignment: .center
+                                           , textColor: .black)
+    
+    private let googleImageView = TTImageView(image: .google_img
+                                              , height: 30
+                                              ,width: 30)
+    
     
     private lazy var googleStack: TTStackView = {
         let arrangedSubView = [googleImageView, siginGoogleLabel]
@@ -48,9 +66,19 @@ class TwitterLoginView: UIView {
     //=======>MARK: -  apple
     //-----------------------------------------------------------------------------------
     
-    let appleView       = TTView(color: .white, borderColor: .lightGray, borderWidth: 1, cornerRadius: 30)
-    let siginAppleLabel = TTLabel(text: "Sign in with apple", font: .palatino_bold, textAlignment: .center, textColor: .black)
-    let appleImageView  = TTImageView(image: .apple_img , height: 30,width: 30)
+    private let appleView     = TTView(color: .white
+                                       , borderColor: .lightGray
+                                       , borderWidth: 1
+                                       , cornerRadius: 30)
+    
+    private let siginAppleLabel = TTLabel(text: "Sign in with apple"
+                                          , font: .palatino_bold
+                                          , textAlignment: .center
+                                          , textColor: .black)
+    
+    private let appleImageView  = TTImageView(image: .apple_img
+                                              , height: 30
+                                              , width: 30)
     
     private lazy var appleStack: TTStackView = {
         let arrangedSubView = [appleImageView, siginAppleLabel]
@@ -63,10 +91,14 @@ class TwitterLoginView: UIView {
     //=======>MARK: -separator
     //-----------------------------------------------------------------------------------
     
+    private let rightSeparator = TTView(color: .lightGray
+                                        , height: 1)
     
-    let rightSeparator = TTView(color: .lightGray , height: 1)
-    let leftSeparator = TTView(color: .lightGray , height: 1)
-    let orLabel = TTLabel(text: "Or", textAlignment: .center)
+    private let leftSeparator = TTView(color: .lightGray
+                                       , height: 1)
+    
+    private let orLabel = TTLabel(text: "Or"
+                                  , textAlignment: .center)
     
     private lazy var separatorStack: TTStackView = {
         let arrangedSubView = [leftSeparator, orLabel,rightSeparator]
@@ -80,10 +112,13 @@ class TwitterLoginView: UIView {
     //=======>MARK: -  Fields
     //-----------------------------------------------------------------------------------
     
-    let emailTextField = TTTextField(fontSiza: 17, placeholder: "Phone, email, or username",
-                                     placeholderFont: .systemFont(ofSize: 17), placeholderColor: .darkGray)
-    let passwordTextField = TTTextField(fontSiza: 17, placeholder: "Password",
-                                     placeholderFont: .systemFont(ofSize: 17), placeholderColor: .darkGray)
+    private let emailTextField = TTTextField(fontSiza: 17
+                                             , placeholder: "Phone, email, or username"
+                                             ,placeholderFont: .systemFont(ofSize: 17)
+                                             , placeholderColor: .darkGray)
+    private let passwordTextField = TTTextField(fontSiza: 17, placeholder: "Password"
+                                                ,placeholderFont: .systemFont(ofSize: 17)
+                                                , placeholderColor: .darkGray)
     
     private lazy var textFieldsStack: TTStackView = {
         let arrangedSubView = [emailTextField, passwordTextField]
@@ -92,6 +127,26 @@ class TwitterLoginView: UIView {
     }()
     
     
+    
+    //-----------------------------------------------------------------------------------
+    //=======>MARK: -  Button
+    //-----------------------------------------------------------------------------------
+    
+    private let loginBtn = TTButton(text: "Login ",
+                                    tintColor: .systemBackground,
+                                    backgroundColor: .label,
+                                    cornerRadius: 25, height: 50)
+    private let forgetBtn = TTButton(text: "Forgot password? ",
+                                     tintColor: .label,
+                                     backgroundColor: .systemBackground,
+                                     cornerRadius: 25,
+                                     borderColor: .label,  borderWidth: 1, height: 50)
+    
+    private lazy var stackOfButtons: TTStackView = {
+        let arrangedSubView = [loginBtn, forgetBtn]
+        let stack = TTStackView(arrangedSubView: arrangedSubView, spacing: 20, axis: .vertical,contentMode: .scaleToFill, alignment: .fill, distribution: .fillEqually)
+        return stack
+    }()
     
     //-----------------------------------------------------------------------------------
     //=======>MARK: -  Init
@@ -106,6 +161,9 @@ class TwitterLoginView: UIView {
         configureAppleView()
         configureSeparatorViews()
         configureEmailANdPasswordView()
+        configureSignINButton()
+        
+        delegate.didTapLoginPublisher(loginBtn.tapPublisher)
     }
     
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
@@ -115,9 +173,16 @@ class TwitterLoginView: UIView {
     //-----------------------------------------------------------------------------------
     
     fileprivate func configureContainerView(){
-        addSubview(containerView)
-        containerView.snp.makeConstraints({
+        
+        addSubview(scrollView)
+        scrollView.snp.makeConstraints({
             $0.edges.equalTo(snp.edges)
+        })
+        
+        scrollView.addSubview(containerView)
+        containerView.snp.makeConstraints({
+            $0.edges.equalTo(scrollView.snp.edges)
+            $0.width.height.equalTo(scrollView)
         })
     }
     
@@ -191,7 +256,12 @@ class TwitterLoginView: UIView {
     }
     
     fileprivate func configureSignINButton(){
-        
+        containerView.addSubview(stackOfButtons)
+        stackOfButtons.snp.makeConstraints({
+            $0.top.equalTo(textFieldsStack.snp.bottom).offset(15)
+            $0.leading.equalTo(containerView.snp.leading).offset(20)
+            $0.trailing.equalTo(containerView.snp.trailing).offset(-20)
+        })
     }
     
 }

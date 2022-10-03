@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Combine
+import CombineCocoa
+import IQKeyboardManagerSwift
 
 class TwitterLoginViewController: UIViewController{
     
@@ -23,6 +26,8 @@ class TwitterLoginViewController: UIViewController{
         return twitterLoginView
     }()
     
+    
+    private(set) var cancellable = Set<AnyCancellable>()
     
     //-----------------------------------------------------------------------------------
     //=======>MARK: -  Init
@@ -51,6 +56,16 @@ class TwitterLoginViewController: UIViewController{
         print("in ViewDidload")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        IQKeyboardManager.shared.enable = false
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        IQKeyboardManager.shared.enable = true
+    }
     
     //-----------------------------------------------------------------------------------
     //=======>MARK: -   Helper Function
@@ -63,5 +78,11 @@ class TwitterLoginViewController: UIViewController{
 
 
 extension TwitterLoginViewController: TwitterViewDelegate {
+    func didTapLoginPublisher(_ tap: AnyPublisher<Void, Never>) {
+        tap.sink(receiveValue: { _ in
+            print("Tapped IS Done")
+        }).store(in: &cancellable)
+    }
+    
     
 }
