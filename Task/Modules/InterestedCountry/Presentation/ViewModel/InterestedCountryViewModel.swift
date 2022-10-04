@@ -6,29 +6,21 @@
 //
 
 import Foundation
-
+import Combine
 
 protocol InterestedCountryViewModelProtocol: AnyObject{
     var input: InterestedCountryViewModel.Input { get }
     var output: InterestedCountryViewModel.Output { get }
-    func fetchCities()
 }
 
 
 class InterestedCountryViewModel: InterestedCountryViewModelProtocol,ViewModelType{
     
     class Input{
-        @Published var countriesSelected: [String] = []
-        
+        let citites: CurrentValueSubject<[String], Never> = CurrentValueSubject([])
     }
     
     class Output{
-        @Published fileprivate(set) var countriesName: [String] = []{
-            didSet{
-                isLoadingCollectionView = true
-            }
-        }
-        @Published var isLoadingCollectionView: Bool = false
     }
     
     
@@ -37,17 +29,5 @@ class InterestedCountryViewModel: InterestedCountryViewModelProtocol,ViewModelTy
     
     private let useCase: InterestedCountryUseCase = InterestedCountryUseCase()
     
-    //-----------------------------------------------------------------------------------
-    //=======>MARK: -  Functions
-    //-----------------------------------------------------------------------------------
-    func fetchCities(){
-        Task{
-            let cities = await useCase.fetchCities()
-            output.countriesName = cities.map({$0.name})
-            DispatchQueue.main.async {
-                self.output.isLoadingCollectionView = true
-            }
-        }
-        
-    }
+
 }

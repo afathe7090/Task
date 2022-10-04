@@ -46,62 +46,35 @@ class InterestedCountryVIewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        viewModel.fetchCities()
-        reloadingCollectionView()
-        
+        configureEnableButton()
     }
     
-    fileprivate func reloadingCollectionView(){
-        viewModel.output.$isLoadingCollectionView.receive(on: RunLoop.main).subscribe(on: RunLoop.main).sink { state in
-            if state { self.mainView.collectionView.reloadData() }
+
+    fileprivate func configureEnableButton(){
+        viewModel.input.citites.map({
+            return $0.count >= 3 && $0.count <= 7
+        }).sink { statues in
+            print(statues)
+            self.mainView.nextButtonTOWeatherScreen.isEnabled = statues
         }.store(in: &cancellable)
     }
-    
     
 }
 
 
 extension InterestedCountryVIewController: InterestedCountryViewDelegate {
     
-    
-    func numberOfSections() -> Int {
-        return 1
+    func textPublisher(_ textPublisher: AnyPublisher<String?, Never>) {
+        textPublisher.sink { str in
+            guard let str = str else { return }
+            let array = str.split(separator: ",").map({$0.trimmingCharacters(in: .whitespaces)})
+            self.viewModel.input.citites.send(array)
+        }.store(in: &cancellable)
     }
-    
-    func numberOfItemsInSection(section: Int) -> Int {
-        return viewModel.output.countriesName.count
-    }
-    
-    func cellForItemAt(_ cell: CountryCell, indexPath: IndexPath) {
-        cell.setupCountryLabel(txt: viewModel.output.countriesName[indexPath.row])
-    }
-    
-    func didSelectItemAt(collectionView: UICollectionView, indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? CountryCell else { return }
-//        if arrSelectedIndex.count < 7{
-//            viewModel.input.countriesSelected.append(viewModel.output.countriesName[indexPath.row])
-//            arrSelectedIndex.append(indexPath.row)
-//            cell.isSelectedCell(true)
-//        }else{
-//            return
-//        }
-    }
-    
-    func didDeselectItemAt(collectionView: UICollectionView, indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? CountryCell else { return }
-//        if arrSelectedIndex.contains(indexPath.row) {
-//            viewModel.input.countriesSelected = viewModel.input.countriesSelected
-//                .filter({$0 != viewModel.output.countriesName[indexPath.row]})
-//            cell.isSelectedCell(false)
-//        }
-    }
-    
-    
     
     func didTapContinuePublisher(_ tap: AnyPublisher<Void, Never>) {
         tap.sink { _ in
-            print(self.viewModel.input.countriesSelected)
+            print("Taped")
         }.store(in: &cancellable)
     }
     

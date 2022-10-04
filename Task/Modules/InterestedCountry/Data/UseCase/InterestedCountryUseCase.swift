@@ -13,7 +13,5 @@ class InterestedCountryUseCase  {
     
     private let repo: InterestedCountryRepo = InterestedCountryRepoImple()
     
-    func fetchCities() async ->  [City]{
-        return await repo.fetchCities()
-    }
+
 }
