@@ -17,7 +17,6 @@
 		742AD83028EBA0C700AF0FC2 /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742AD82E28EBA0C700AF0FC2 /* CountryCell.xib */; };
 		742AD83228EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AD83128EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift */; };
 		742AD83528EBB45C00AF0FC2 /* CountryStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AD83428EBB45C00AF0FC2 /* CountryStr.swift */; };
-		742AD83828EBC14300AF0FC2 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AD83728EBC14300AF0FC2 /* City.swift */; };
 		7451D62A28E981AE00CB21C2 /* TTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7451D62928E981AE00CB21C2 /* TTView.swift */; };
 		7469F3DB28E8C4E500ABB804 /* TwitterLoginRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469F3DA28E8C4E500ABB804 /* TwitterLoginRepo.swift */; };
 		7469F3DF28E8C51F00ABB804 /* TwitterLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469F3DE28E8C51F00ABB804 /* TwitterLoginUseCase.swift */; };
@@ -30,6 +29,13 @@
 		74815A0A28E9822200DAB0DF /* TTStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0928E9822200DAB0DF /* TTStackView.swift */; };
 		74815A0C28E9823100DAB0DF /* TTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0B28E9823100DAB0DF /* TTTextField.swift */; };
 		74815A0E28E9823800DAB0DF /* TTImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0D28E9823800DAB0DF /* TTImageVIew.swift */; };
+		74A0F4EF28EC357A008CD955 /* NetworkModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0F4EE28EC357A008CD955 /* NetworkModule.swift */; };
+		74A0F4F128EC379B008CD955 /* WeatherVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0F4F028EC379B008CD955 /* WeatherVIewController.swift */; };
+		74A0F4F328EC37C0008CD955 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0F4F228EC37C0008CD955 /* WeatherViewModel.swift */; };
+		74A0F4F528EC3833008CD955 /* WeatherRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0F4F428EC3833008CD955 /* WeatherRepo.swift */; };
+		74A0F4F728EC3855008CD955 /* WeatherRepoImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0F4F628EC3855008CD955 /* WeatherRepoImplementation.swift */; };
+		74A0F4F928EC387B008CD955 /* WeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0F4F828EC387B008CD955 /* WeatherUseCase.swift */; };
+		74A0F4FB28EC38A2008CD955 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0F4FA28EC38A2008CD955 /* Weather.swift */; };
 		74A6CC6F28E9BBBB006F5DF7 /* TTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6CC6E28E9BBBB006F5DF7 /* TTLabel.swift */; };
 		74A6CC7228E9BF51006F5DF7 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6CC7128E9BF51006F5DF7 /* UIFont+Ext.swift */; };
 		74A6CC7428E9C065006F5DF7 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6CC7328E9C065006F5DF7 /* UIImage+Ext.swift */; };
@@ -52,7 +58,6 @@
 		742AD82E28EBA0C700AF0FC2 /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
 		742AD83128EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostionalFlowLayOut.swift; sourceTree = "<group>"; };
 		742AD83428EBB45C00AF0FC2 /* CountryStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStr.swift; sourceTree = "<group>"; };
-		742AD83728EBC14300AF0FC2 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		7451D62928E981AE00CB21C2 /* TTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTView.swift; sourceTree = "<group>"; };
 		7469F3DA28E8C4E500ABB804 /* TwitterLoginRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLoginRepo.swift; sourceTree = "<group>"; };
 		7469F3DE28E8C51F00ABB804 /* TwitterLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLoginUseCase.swift; sourceTree = "<group>"; };
@@ -64,6 +69,13 @@
 		74815A0928E9822200DAB0DF /* TTStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTStackView.swift; sourceTree = "<group>"; };
 		74815A0B28E9823100DAB0DF /* TTTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTextField.swift; sourceTree = "<group>"; };
 		74815A0D28E9823800DAB0DF /* TTImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTImageVIew.swift; sourceTree = "<group>"; };
+		74A0F4EE28EC357A008CD955 /* NetworkModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModule.swift; sourceTree = "<group>"; };
+		74A0F4F028EC379B008CD955 /* WeatherVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVIewController.swift; sourceTree = "<group>"; };
+		74A0F4F228EC37C0008CD955 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		74A0F4F428EC3833008CD955 /* WeatherRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepo.swift; sourceTree = "<group>"; };
+		74A0F4F628EC3855008CD955 /* WeatherRepoImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepoImplementation.swift; sourceTree = "<group>"; };
+		74A0F4F828EC387B008CD955 /* WeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUseCase.swift; sourceTree = "<group>"; };
+		74A0F4FA28EC38A2008CD955 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		74A6CC6E28E9BBBB006F5DF7 /* TTLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTLabel.swift; sourceTree = "<group>"; };
 		74A6CC7128E9BF51006F5DF7 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
 		74A6CC7328E9C065006F5DF7 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
@@ -108,7 +120,6 @@
 		742AD81428EB23FF00AF0FC2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				742AD83628EBC12A00AF0FC2 /* Model */,
 				742AD81628EB243B00AF0FC2 /* ViewModel */,
 				742AD81528EB243400AF0FC2 /* View */,
 			);
@@ -182,12 +193,89 @@
 			path = Utilis;
 			sourceTree = "<group>";
 		};
-		742AD83628EBC12A00AF0FC2 /* Model */ = {
+		742AD83B28EBE39900AF0FC2 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				742AD83728EBC14300AF0FC2 /* City.swift */,
+				742AD83E28EBE3A800AF0FC2 /* Data */,
+				742AD83D28EBE3A600AF0FC2 /* Domain */,
+				742AD83C28EBE3A400AF0FC2 /* Presentaion */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		742AD83C28EBE3A400AF0FC2 /* Presentaion */ = {
+			isa = PBXGroup;
+			children = (
+				742AD84428EBE3DF00AF0FC2 /* ViewModel */,
+				742AD84328EBE3D200AF0FC2 /* Model */,
+				742AD84228EBE3C900AF0FC2 /* View */,
+			);
+			path = Presentaion;
+			sourceTree = "<group>";
+		};
+		742AD83D28EBE3A600AF0FC2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				742AD84128EBE3BB00AF0FC2 /* Repo */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		742AD83E28EBE3A800AF0FC2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				742AD84028EBE3B800AF0FC2 /* UseCase */,
+				742AD83F28EBE3B600AF0FC2 /* Repo */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		742AD83F28EBE3B600AF0FC2 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				74A0F4F628EC3855008CD955 /* WeatherRepoImplementation.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		742AD84028EBE3B800AF0FC2 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				74A0F4F828EC387B008CD955 /* WeatherUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		742AD84128EBE3BB00AF0FC2 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				74A0F4F428EC3833008CD955 /* WeatherRepo.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		742AD84228EBE3C900AF0FC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74A0F4F028EC379B008CD955 /* WeatherVIewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		742AD84328EBE3D200AF0FC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74A0F4FA28EC38A2008CD955 /* Weather.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		742AD84428EBE3DF00AF0FC2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				74A0F4F228EC37C0008CD955 /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7434039B28EAFCF300236FE2 /* InterestedCountry */ = {
@@ -274,6 +362,7 @@
 		7469F3D128E8C43400ABB804 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				742AD83B28EBE39900AF0FC2 /* Weather */,
 				7434039B28EAFCF300236FE2 /* InterestedCountry */,
 				7469F3D228E8C48C00ABB804 /* TwitterLogin */,
 			);
@@ -357,6 +446,14 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
+		74A0F4ED28EC3561008CD955 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				74A0F4EE28EC357A008CD955 /* NetworkModule.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		74A6CC6D28E9BBAB006F5DF7 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +493,7 @@
 		74EEACC228E8C2D60001ED97 /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				74A0F4ED28EC3561008CD955 /* Network */,
 				742AD83328EBB44D00AF0FC2 /* Utilis */,
 				74A6CC7028E9BF41006F5DF7 /* Extension */,
 				7451D62328E9815000CB21C2 /* CustomViews */,
@@ -540,13 +638,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7469F3E728E8C8E900ABB804 /* TwitterLoginView.swift in Sources */,
+				74A0F4F928EC387B008CD955 /* WeatherUseCase.swift in Sources */,
 				742AD82228EB25AB00AF0FC2 /* InterestedCountryRepo.swift in Sources */,
+				74A0F4F728EC3855008CD955 /* WeatherRepoImplementation.swift in Sources */,
+				74A0F4F528EC3833008CD955 /* WeatherRepo.swift in Sources */,
 				74815A0828E9821800DAB0DF /* TTButton.swift in Sources */,
 				74EEACC428E8C2D60001ED97 /* AppDelegate.swift in Sources */,
 				742AD82828EB260600AF0FC2 /* InterestedCountryView.swift in Sources */,
 				742AD82F28EBA0C700AF0FC2 /* CountryCell.swift in Sources */,
+				74A0F4F128EC379B008CD955 /* WeatherVIewController.swift in Sources */,
 				7469F3DF28E8C51F00ABB804 /* TwitterLoginUseCase.swift in Sources */,
 				7469F3E328E8C58A00ABB804 /* TwitterLoginViewModel.swift in Sources */,
+				74A0F4EF28EC357A008CD955 /* NetworkModule.swift in Sources */,
 				742AD82428EB25C100AF0FC2 /* InterestedCountryUseCase.swift in Sources */,
 				74815A0C28E9823100DAB0DF /* TTTextField.swift in Sources */,
 				7469F3E528E8C7B600ABB804 /* TwitterLoginViewController.swift in Sources */,
@@ -554,16 +657,17 @@
 				74EEACC628E8C2D60001ED97 /* SceneDelegate.swift in Sources */,
 				742AD83228EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift in Sources */,
 				742AD83528EBB45C00AF0FC2 /* CountryStr.swift in Sources */,
+				74A0F4F328EC37C0008CD955 /* WeatherViewModel.swift in Sources */,
 				74A6CC7428E9C065006F5DF7 /* UIImage+Ext.swift in Sources */,
 				742AD82628EB25D200AF0FC2 /* InterestedCountryRepoImple.swift in Sources */,
 				742AD81E28EB24A200AF0FC2 /* InterestedCountryViewModel.swift in Sources */,
+				74A0F4FB28EC38A2008CD955 /* Weather.swift in Sources */,
 				74A6CC7228E9BF51006F5DF7 /* UIFont+Ext.swift in Sources */,
 				7451D62A28E981AE00CB21C2 /* TTView.swift in Sources */,
 				74815A0E28E9823800DAB0DF /* TTImageVIew.swift in Sources */,
 				7469F3DB28E8C4E500ABB804 /* TwitterLoginRepo.swift in Sources */,
 				74A6CC6F28E9BBBB006F5DF7 /* TTLabel.swift in Sources */,
 				74815A0A28E9822200DAB0DF /* TTStackView.swift in Sources */,
-				742AD83828EBC14300AF0FC2 /* City.swift in Sources */,
 				742AD82028EB252900AF0FC2 /* InterestedCountryVIewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -47,6 +47,7 @@ class InterestedCountryVIewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureEnableButton()
+
     }
     
 

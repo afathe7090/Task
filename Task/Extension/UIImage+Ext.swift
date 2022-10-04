@@ -12,4 +12,5 @@ extension UIImage {
     static let apple_img   = UIImage(named: "apple")!
     static let google_img  = UIImage(named: "google")!
     static let twitter_img = UIImage(named: "twitter")!
+    static let weather_img = UIImage(named: "weather")!
 }

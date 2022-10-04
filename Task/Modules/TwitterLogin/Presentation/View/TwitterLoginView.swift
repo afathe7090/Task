@@ -32,7 +32,7 @@ class TwitterLoginView: UIView {
     }()
     
     private let containerView = TTView(color: .clear)
-    private let twitterImageView = TTImageView(image: .twitter_img)
+    private let weatherImageView = TTImageView(image: .weather_img)
     private let titleLabel = TTLabel(text: "Sign in by Twitter", font: .palatino_bold_twitter, textAlignment: .center)
     
     
@@ -187,15 +187,15 @@ class TwitterLoginView: UIView {
     }
     
     fileprivate func configureTitleVIewByTwitterImageAndTittleLabel(){
-        containerView.addSubview(twitterImageView)
-        twitterImageView.snp.makeConstraints {
+        containerView.addSubview(weatherImageView)
+        weatherImageView.snp.makeConstraints {
             $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(20)
             $0.centerX.equalTo(snp.centerX)
-            $0.width.height.equalTo(100)
+            $0.width.height.equalTo(140)
         }
         containerView.addSubview(titleLabel)
         titleLabel.snp.makeConstraints({
-            $0.top.equalTo(twitterImageView.snp.bottom).offset(20)
+            $0.top.equalTo(weatherImageView.snp.bottom).offset(20)
             $0.leading.equalTo(containerView.snp.leading).offset(20)
             $0.trailing.equalTo(containerView.snp.trailing).offset(-20)
         })
