@@ -9,8 +9,6 @@ target 'Task' do
 
 pod 'SnapKit'
 pod 'CombineCocoa'
-pod 'RxSwift'
-pod 'RxCocoa'
 pod 'IQKeyboardManagerSwift', '6.3.0'
 
 end
