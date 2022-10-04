@@ -80,7 +80,9 @@ class TwitterLoginViewController: UIViewController{
 extension TwitterLoginViewController: TwitterViewDelegate {
     func didTapLoginPublisher(_ tap: AnyPublisher<Void, Never>) {
         tap.sink(receiveValue: { _ in
-            print("Tapped IS Done")
+            let interectedViewController = InterestedCountryVIewController()
+            interectedViewController.modalPresentationStyle = .fullScreen
+            self.present(interectedViewController, animated: true)
         }).store(in: &cancellable)
     }
     

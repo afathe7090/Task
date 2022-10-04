@@ -9,11 +9,12 @@ import UIKit
 
 class TTLabel: UILabel {
     
-    init(text: String,
+    init(text: String,numberOfLines: Int = 1,
          font: UIFont = .systemFont(ofSize: 17),
          textAlignment: NSTextAlignment = .left , textColor: UIColor = .label){
         super.init(frame: .zero)
         
+        self.numberOfLines = numberOfLines
         self.text = text
         self.font = font
         self.textAlignment = textAlignment

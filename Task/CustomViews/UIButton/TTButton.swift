@@ -12,10 +12,10 @@ import UIKit
 class TTButton: UIButton  {
     
     
-    init(text: String, tintColor: UIColor , backgroundColor: UIColor, cornerRadius: CGFloat, borderColor: UIColor = .clear, borderWidth: CGFloat  = 0, height: CGFloat? = nil){
+    init(text: String,font: UIFont = UIFont.palatino_bold, tintColor: UIColor , backgroundColor: UIColor, cornerRadius: CGFloat, borderColor: UIColor = .clear, borderWidth: CGFloat  = 0, height: CGFloat? = nil){
         super.init(frame: .zero)
         self.layer.cornerRadius = cornerRadius
-        self.setAttributedTitle(NSAttributedString(string: text, attributes: [.font:UIFont.palatino_bold,
+        self.setAttributedTitle(NSAttributedString(string: text, attributes: [.font:font,
                                                                               .foregroundColor: tintColor]), for: .normal)
 
         self.backgroundColor =   backgroundColor
