@@ -23,4 +23,12 @@ class NetworkProviderImple:  NetworkProviderRepo{
             .map(WeatherCity.self)
     }
     
+    
+    func readForecasetWeather(city: String) -> AnyPublisher<ForecastCity, MoyaError> {
+       return provider
+            .requestPublisher(.readForecastWeather(city))
+            .filterSuccessfulStatusCodes()
+            .map(ForecastCity.self)
+    }
+    
 }

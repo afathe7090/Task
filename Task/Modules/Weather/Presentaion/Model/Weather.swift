@@ -9,13 +9,12 @@ import Foundation
 
 
 struct WeatherCity: Codable {
-    
-    let id : Int
-    let name: String
+    let id : Int?
+    let name: String?
     let main: Temp
     let wind: Wind
     let weather: [Weather]
-    
+    let dt_txt: String?
 }
 
 struct Weather: Codable {
@@ -30,4 +29,15 @@ struct Temp: Codable{
 
 struct Wind: Codable {
     let speed: Double
+}
+
+struct ForecastCity: Codable {
+    
+    let list: [WeatherCity]
+    let city: City
+}
+
+struct City: Codable {
+    let id: Int
+    let name: String
 }

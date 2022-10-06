@@ -8,14 +8,14 @@
 import Foundation
 
 
-enum Network_Constant: String{
+enum Network_Constant{
     
-    case BASE_URL = "https://api.openweathermap.org/data/2.5/"
-    case WEATHER_PATH = "weather"
-    case FORECAST_PATH = "forecast"
+    static let  BASE_URL = "https://api.openweathermap.org"
+    static let  WEATHER_PATH = "/data/2.5/weather"
+    static let  FORECAST_PATH = "/data/2.5/forecast"
     
     
-    func PARAMETER(cityName: String)-> [String: Any]{
+   static func PARAMETER(cityName: String)-> [String: Any]{
         return ["q": cityName , "appid" : "b7f1d80b093cadc7f43148b44aeb0060"]
     }
 }

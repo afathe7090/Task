@@ -13,7 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
-				12D431D5216928D3B42CCBA0CED5C376 /* PBXTargetDependency */,
+				C7521AE8DA4990F35F733A184C4AC294 /* PBXTargetDependency */,
 			);
 			name = TwitterKit;
 			productName = TwitterKit;
@@ -203,68 +203,68 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		013C796E57ADF65AE3268CBD09D458AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
-			remoteInfo = IQKeyboardManagerSwift;
-		};
-		13B4838436E10987A2B7A636297E45D6 /* PBXContainerItemProxy */ = {
+		1D2B64F056BB4BEBF17563BE1F8FFFC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
-		46354998CA25D14D3B279F74C252AB0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0D98A3F1DDB5986495AF1DD067F7C78;
-			remoteInfo = TwitterCore;
-		};
-		5CAE3EA445A4EF287B8384B53288F89C /* PBXContainerItemProxy */ = {
+		225D63A69A47D54F5BC39F561952AFD4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B60766D2DF87D6EAD1E04F386DA8986E;
 			remoteInfo = TwitterKit;
 		};
-		9E6A1633D536A3C1F602AFF008D6AA2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C11E051A417486DA3B63E1333BABA34;
-			remoteInfo = CombineCocoa;
-		};
-		A183E0C4562F688717122C7FB55DB0EC /* PBXContainerItemProxy */ = {
+		3E6E6093ECBBB5B181B4A3B4224CEB1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D0D98A3F1DDB5986495AF1DD067F7C78;
 			remoteInfo = TwitterCore;
 		};
-		B602CE25751532A590EF789408CF831C /* PBXContainerItemProxy */ = {
+		3FC43E98099479995956B1F128D76A71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
-		DBC53EF797128AC4F640ABD703C35A04 /* PBXContainerItemProxy */ = {
+		53577C70CD59D1BDD8F87259EFCC369E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0D98A3F1DDB5986495AF1DD067F7C78;
+			remoteInfo = TwitterCore;
+		};
+		6ACE92078BDFE4D28A811ECAE1BB7797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		7F4057E1B32033156A7924CCE4C00554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		AA543663181C5D84B9901EA0EC46B23B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 17F9141D333DA1A7BE5937F227221070;
 			remoteInfo = Moya;
 		};
-		FF5457CAC466A4FCCC87195420384C26 /* PBXContainerItemProxy */ = {
+		CC93DEBA72C3CC2ABFF878BA0C9DD7A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
-			remoteInfo = SnapKit;
+			remoteGlobalIDString = 1C11E051A417486DA3B63E1333BABA34;
+			remoteInfo = CombineCocoa;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -287,9 +287,7 @@
 		0FC7FCB826F2406B1A289B23B0B127EF /* CombineCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CombineCocoa.release.xcconfig; sourceTree = "<group>"; };
 		127E753B40ED4B8E97282BEA3CDEF18F /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
 		12EE3134335D6BA0C815690EC47FBBB8 /* ObjcDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjcDelegateProxy.m; path = Sources/Runtime/ObjcDelegateProxy.m; sourceTree = "<group>"; };
-		15A6E005D3DDC62927E9BD283C02A51A /* TwitterKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwitterKit.release.xcconfig; sourceTree = "<group>"; };
 		15A962530937F08F0F95D2C73A1AA714 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Sources/ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		180D4A05A4C09C8CEC63ECC5B2E03EF1 /* TwitterKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwitterKit.debug.xcconfig; sourceTree = "<group>"; };
 		18CA2551BFCAD6279BD7DAFBED094A2E /* ValidationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationType.swift; path = Sources/Moya/ValidationType.swift; sourceTree = "<group>"; };
 		19D907AB83F9B0F3AD078AA57FE182A0 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
 		19F33BBEC6662FB5C436041A1DCEE41D /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Sources/LayoutConstraint.swift; sourceTree = "<group>"; };
@@ -308,6 +306,7 @@
 		239A4FE4C01277F47E8C54F3D3404CDC /* MultiTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiTarget.swift; path = Sources/Moya/MultiTarget.swift; sourceTree = "<group>"; };
 		2518B27D93D9CE87F285F62EDDF9044F /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Sources/ConstraintRelation.swift; sourceTree = "<group>"; };
 		263608F0C468E224FE8D7E71BE62E056 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		270708C680661E4CA0C121E353E0027F /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		27396465EBDAD6D72FFEC6B8C32D48A1 /* UISegmentedControl+Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISegmentedControl+Combine.swift"; path = "Sources/CombineCocoa/Controls/UISegmentedControl+Combine.swift"; sourceTree = "<group>"; };
 		2815035CB6786C024D14A4F291D4753A /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
 		2C262EEB05F4688967F98826426212DA /* NetworkLoggerPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkLoggerPlugin.swift; path = Sources/Moya/Plugins/NetworkLoggerPlugin.swift; sourceTree = "<group>"; };
@@ -330,10 +329,8 @@
 		3D1764BF2BF30CD7EF2B5B5B3180DCC6 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		3D6C0AA84C01EB2B2F0DCC1DC9DEE171 /* UICollectionView+Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Combine.swift"; path = "Sources/CombineCocoa/Controls/UICollectionView+Combine.swift"; sourceTree = "<group>"; };
 		3EF554594EA7A5555132FA5F56EDB393 /* Pods-Task-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Task-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3FB7A9B859F0C5E8AFA7A80EE68F35F7 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		4273E1447A710E219E65E044318315C9 /* Pods-Task */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Task"; path = Pods_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		452A7FCB06DE9E864A6B3970FB447CD1 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		46048BE7035DC00670295AD184387EEF /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		46256B504554B2FCF97C674AD020889E /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		4723933B51879F24FDA5EB38D2877507 /* Pods-Task.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Task.modulemap"; sourceTree = "<group>"; };
 		4833172A05EA0C3FF2DBCDF111D33E44 /* MoyaProvider+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MoyaProvider+Internal.swift"; path = "Sources/Moya/MoyaProvider+Internal.swift"; sourceTree = "<group>"; };
@@ -342,6 +339,7 @@
 		4AD672FC90909ED6163A0DE96BC57C7F /* Moya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Moya.debug.xcconfig; sourceTree = "<group>"; };
 		4BF9527FE8E127949B849F1F2B5CFB7E /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
 		4CB474762144C3507B20624C35038BA7 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		4DFF618F7B2CCC6EF8949DE859C5C26A /* TwitterKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwitterKit.debug.xcconfig; sourceTree = "<group>"; };
 		4EE11780AA699E85300AFBC02DF70AEF /* CombineCocoa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CombineCocoa-prefix.pch"; sourceTree = "<group>"; };
 		4EFBBF9C482901C700CEC7BD496C8F2A /* NSTextStorage+Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextStorage+Combine.swift"; path = "Sources/CombineCocoa/Controls/NSTextStorage+Combine.swift"; sourceTree = "<group>"; };
 		536AA3D3284061A2BBBF6D2B6C404CA3 /* Cancellable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cancellable.swift; path = Sources/Moya/Cancellable.swift; sourceTree = "<group>"; };
@@ -369,6 +367,7 @@
 		736BD71F9870D004654F8E2CEA4F797D /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		73F5B25649D942C88D3093FFF1CF6B1C /* Moya-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Moya-prefix.pch"; sourceTree = "<group>"; };
 		7415559A69AEA7DF0D9C6093B52CCDB3 /* AnyPublisher+Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AnyPublisher+Response.swift"; path = "Sources/CombineMoya/AnyPublisher+Response.swift"; sourceTree = "<group>"; };
+		75BFEFC1E4E65D110210302AEC5A041E /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		772D892FCEE51E32CD164333C89C10BB /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
 		79327BE7C7EED3D11ED72C690987C00F /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		7A8A05BC43409A51D8F576AB4A4CDB78 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Sources/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
@@ -432,7 +431,6 @@
 		B96B499523433984CA438B666E4F2F9C /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		BA1F7C4C3AE580AD1DB2D3F84BB17D3F /* Task.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Sources/Moya/Task.swift; sourceTree = "<group>"; };
 		BA43FEDA2E68DDD72E590CF900852790 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Sources/ConstraintConfig.swift; sourceTree = "<group>"; };
-		BDE35DC7C5FC34496BF6F80270C4725B /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterShareExtensionUIResources.bundle; path = iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
 		C20DFA82B7D9CBE982437FE468DA016C /* Pods-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Task.release.xcconfig"; sourceTree = "<group>"; };
 		C21E4C4ABCC8A56D96683673744A01ED /* NetworkActivityPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityPlugin.swift; path = Sources/Moya/Plugins/NetworkActivityPlugin.swift; sourceTree = "<group>"; };
 		C2C6ACCB66FFE9FBA931E4216FCF415A /* MoyaProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoyaProvider.swift; path = Sources/Moya/MoyaProvider.swift; sourceTree = "<group>"; };
@@ -473,6 +471,7 @@
 		ECB98439EB14B0E55BFA759DCB7B5FF1 /* UITableView+Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Combine.swift"; path = "Sources/CombineCocoa/Controls/UITableView+Combine.swift"; sourceTree = "<group>"; };
 		EE8B529F672D7F9FCE44F51C4BA876A0 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
 		EEFE91828BAF6031DEDCA8084DEBAEDD /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		EF8F9A3572A5BC1EE75313FB3A2CEFC5 /* TwitterKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwitterKit.release.xcconfig; sourceTree = "<group>"; };
 		F90DFF6BC6B19376E2111FF7CC817914 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		F9EE08092FEC9CED8F95CB362CE49251 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Moya/Image.swift; sourceTree = "<group>"; };
 		FB0C112D97DBBBBEB1B9927C2E979CCD /* UIRefreshControl+Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIRefreshControl+Combine.swift"; path = "Sources/CombineCocoa/Controls/UIRefreshControl+Combine.swift"; sourceTree = "<group>"; };
@@ -549,7 +548,7 @@
 				D7F7AD7B625571B374E194E54A8F0A10 /* Moya */,
 				53DD5D2234CE9F4ED02BEB7405EE9FCC /* SnapKit */,
 				29D1EF91437B2C1B2710EB0632BE9072 /* TwitterCore */,
-				FE051208C43D776B1840FFF1979E4E5D /* TwitterKit */,
+				9DDEB1254B8BEC4D7DA0A20F4FA957F2 /* TwitterKit */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -567,6 +566,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CombineCocoa";
+			sourceTree = "<group>";
+		};
+		0EA7C64204D57E090EDF3E434A18C4C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				270708C680661E4CA0C121E353E0027F /* TwitterKitResources.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		17973E385D030B279F0DA6D5E136E57C /* Frameworks */ = {
@@ -595,15 +602,6 @@
 			path = "Target Support Files/Pods-Task";
 			sourceTree = "<group>";
 		};
-		23153D8422E8A584A4E5EADCF0484269 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3FB7A9B859F0C5E8AFA7A80EE68F35F7 /* TwitterKitResources.bundle */,
-				BDE35DC7C5FC34496BF6F80270C4725B /* TwitterShareExtensionUIResources.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		2666861C0866C203B675C2DCF39ED44D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -619,6 +617,14 @@
 				679FC1005C593C0CC506E09A4F747357 /* Support Files */,
 			);
 			path = TwitterCore;
+			sourceTree = "<group>";
+		};
+		36AB7E0FA937797324E4C9F4A56D9B9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75BFEFC1E4E65D110210302AEC5A041E /* TwitterKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		395DDECE226700BEC92E4EBBC56738A9 /* Alamofire */ = {
@@ -663,16 +669,6 @@
 				46F0501AA9D42EC82D1D6193C22C9B29 /* Support Files */,
 			);
 			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		44CC4EA5DB05320AE8A4132BDAA0B80E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				180D4A05A4C09C8CEC63ECC5B2E03EF1 /* TwitterKit.debug.xcconfig */,
-				15A6E005D3DDC62927E9BD283C02A51A /* TwitterKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TwitterKit";
 			sourceTree = "<group>";
 		};
 		46F0501AA9D42EC82D1D6193C22C9B29 /* Support Files */ = {
@@ -850,12 +846,24 @@
 			path = CombineCocoa;
 			sourceTree = "<group>";
 		};
-		7A45D14EEC6AC58D9E445DA90F0D0CA1 /* Frameworks */ = {
+		89B3BB53ADB3A528A3B3A4D7E1CD1D9A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46048BE7035DC00670295AD184387EEF /* TwitterKit.framework */,
+				4DFF618F7B2CCC6EF8949DE859C5C26A /* TwitterKit.debug.xcconfig */,
+				EF8F9A3572A5BC1EE75313FB3A2CEFC5 /* TwitterKit.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/TwitterKit";
+			sourceTree = "<group>";
+		};
+		9DDEB1254B8BEC4D7DA0A20F4FA957F2 /* TwitterKit */ = {
+			isa = PBXGroup;
+			children = (
+				36AB7E0FA937797324E4C9F4A56D9B9E /* Frameworks */,
+				0EA7C64204D57E090EDF3E434A18C4C5 /* Resources */,
+				89B3BB53ADB3A528A3B3A4D7E1CD1D9A /* Support Files */,
+			);
+			path = TwitterKit;
 			sourceTree = "<group>";
 		};
 		A530744A11638451A3F91D0D13056D48 /* Support Files */ = {
@@ -963,16 +971,6 @@
 			path = "../Target Support Files/Moya";
 			sourceTree = "<group>";
 		};
-		FE051208C43D776B1840FFF1979E4E5D /* TwitterKit */ = {
-			isa = PBXGroup;
-			children = (
-				7A45D14EEC6AC58D9E445DA90F0D0CA1 /* Frameworks */,
-				23153D8422E8A584A4E5EADCF0484269 /* Resources */,
-				44CC4EA5DB05320AE8A4132BDAA0B80E /* Support Files */,
-			);
-			path = TwitterKit;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1041,7 +1039,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				513CA650D05C2F8672755F94ED7294A2 /* PBXTargetDependency */,
+				3A31BF7F992A28605F82D7D69482A39C /* PBXTargetDependency */,
 			);
 			name = Moya;
 			productName = Moya;
@@ -1114,13 +1112,13 @@
 			buildRules = (
 			);
 			dependencies = (
-				460D145933114253E318BC0722F0536E /* PBXTargetDependency */,
-				286626E9220CF6A65B89B5A7F98D9F2F /* PBXTargetDependency */,
-				40C58C915642CC8BBF8922B6D7B23A50 /* PBXTargetDependency */,
-				25C4DE4A086D850D50136AD5A2CAEB56 /* PBXTargetDependency */,
-				17F3849787445D316C7B5339AB02E22D /* PBXTargetDependency */,
-				C2AAB087ACBF4E9BFDD40BCC9D7B212E /* PBXTargetDependency */,
-				FFC8EE28E72C3A917C030A97253A87C2 /* PBXTargetDependency */,
+				9E0C1A6176BED94CE140F6F18D3A570D /* PBXTargetDependency */,
+				E94758DBF4551C5033C2DADA810289DB /* PBXTargetDependency */,
+				52BD050AD347305A42FFCB86FB78B6E6 /* PBXTargetDependency */,
+				3F4C0F886EBB728FB60DF23BEA2F8738 /* PBXTargetDependency */,
+				42FB82DF48DF91AD6EB308CFA180392C /* PBXTargetDependency */,
+				B743D5816024CE47030ED6473FDC21B6 /* PBXTargetDependency */,
+				33D127C4A1641C59B60851437A1EECFD /* PBXTargetDependency */,
 			);
 			name = "Pods-Task";
 			productName = Pods_Task;
@@ -1419,66 +1417,66 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		12D431D5216928D3B42CCBA0CED5C376 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TwitterCore;
-			target = D0D98A3F1DDB5986495AF1DD067F7C78 /* TwitterCore */;
-			targetProxy = 46354998CA25D14D3B279F74C252AB0E /* PBXContainerItemProxy */;
-		};
-		17F3849787445D316C7B5339AB02E22D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnapKit;
-			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = FF5457CAC466A4FCCC87195420384C26 /* PBXContainerItemProxy */;
-		};
-		25C4DE4A086D850D50136AD5A2CAEB56 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Moya;
-			target = 17F9141D333DA1A7BE5937F227221070 /* Moya */;
-			targetProxy = DBC53EF797128AC4F640ABD703C35A04 /* PBXContainerItemProxy */;
-		};
-		286626E9220CF6A65B89B5A7F98D9F2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CombineCocoa;
-			target = 1C11E051A417486DA3B63E1333BABA34 /* CombineCocoa */;
-			targetProxy = 9E6A1633D536A3C1F602AFF008D6AA2C /* PBXContainerItemProxy */;
-		};
-		40C58C915642CC8BBF8922B6D7B23A50 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = IQKeyboardManagerSwift;
-			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
-			targetProxy = 013C796E57ADF65AE3268CBD09D458AC /* PBXContainerItemProxy */;
-		};
-		460D145933114253E318BC0722F0536E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = B602CE25751532A590EF789408CF831C /* PBXContainerItemProxy */;
-		};
-		513CA650D05C2F8672755F94ED7294A2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = 13B4838436E10987A2B7A636297E45D6 /* PBXContainerItemProxy */;
-		};
-		C2AAB087ACBF4E9BFDD40BCC9D7B212E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TwitterCore;
-			target = D0D98A3F1DDB5986495AF1DD067F7C78 /* TwitterCore */;
-			targetProxy = A183E0C4562F688717122C7FB55DB0EC /* PBXContainerItemProxy */;
-		};
-		FFC8EE28E72C3A917C030A97253A87C2 /* PBXTargetDependency */ = {
+		33D127C4A1641C59B60851437A1EECFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TwitterKit;
 			target = B60766D2DF87D6EAD1E04F386DA8986E /* TwitterKit */;
-			targetProxy = 5CAE3EA445A4EF287B8384B53288F89C /* PBXContainerItemProxy */;
+			targetProxy = 225D63A69A47D54F5BC39F561952AFD4 /* PBXContainerItemProxy */;
+		};
+		3A31BF7F992A28605F82D7D69482A39C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 3FC43E98099479995956B1F128D76A71 /* PBXContainerItemProxy */;
+		};
+		3F4C0F886EBB728FB60DF23BEA2F8738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moya;
+			target = 17F9141D333DA1A7BE5937F227221070 /* Moya */;
+			targetProxy = AA543663181C5D84B9901EA0EC46B23B /* PBXContainerItemProxy */;
+		};
+		42FB82DF48DF91AD6EB308CFA180392C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 7F4057E1B32033156A7924CCE4C00554 /* PBXContainerItemProxy */;
+		};
+		52BD050AD347305A42FFCB86FB78B6E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = 6ACE92078BDFE4D28A811ECAE1BB7797 /* PBXContainerItemProxy */;
+		};
+		9E0C1A6176BED94CE140F6F18D3A570D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 1D2B64F056BB4BEBF17563BE1F8FFFC1 /* PBXContainerItemProxy */;
+		};
+		B743D5816024CE47030ED6473FDC21B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwitterCore;
+			target = D0D98A3F1DDB5986495AF1DD067F7C78 /* TwitterCore */;
+			targetProxy = 53577C70CD59D1BDD8F87259EFCC369E /* PBXContainerItemProxy */;
+		};
+		C7521AE8DA4990F35F733A184C4AC294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwitterCore;
+			target = D0D98A3F1DDB5986495AF1DD067F7C78 /* TwitterCore */;
+			targetProxy = 3E6E6093ECBBB5B181B4A3B4224CEB1A /* PBXContainerItemProxy */;
+		};
+		E94758DBF4551C5033C2DADA810289DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CombineCocoa;
+			target = 1C11E051A417486DA3B63E1333BABA34 /* CombineCocoa */;
+			targetProxy = CC93DEBA72C3CC2ABFF878BA0C9DD7A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0BDE68CF133AE02C824D77CA5F032879 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 180D4A05A4C09C8CEC63ECC5B2E03EF1 /* TwitterKit.debug.xcconfig */;
+			baseConfigurationReference = 4DFF618F7B2CCC6EF8949DE859C5C26A /* TwitterKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1546,7 +1544,7 @@
 		};
 		405D6E07065B2A51F074A9412AB96E54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15A6E005D3DDC62927E9BD283C02A51A /* TwitterKit.release.xcconfig */;
+			baseConfigurationReference = EF8F9A3572A5BC1EE75313FB3A2CEFC5 /* TwitterKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

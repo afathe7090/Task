@@ -74,8 +74,12 @@ extension InterestedCountryVIewController: InterestedCountryViewDelegate {
     }
     
     func didTapContinuePublisher(_ tap: AnyPublisher<Void, Never>) {
-        tap.sink { _ in
-            print("Taped")
+        tap.sink {[weak self] _ in
+            guard let self = self  else { return }
+//            let weatherViewModel = WeatherViewModel(cities: self.viewModel.input.citites.value)
+//            let weatherViewController = WeatherViewController(viewModel: weatherViewModel)
+//            weatherViewController.modalPresentationStyle = .fullScreen
+//            self.present(weatherViewController, animated: true)
         }.store(in: &cancellable)
     }
     

@@ -10,17 +10,20 @@ import Moya
 
 enum NetworkServices {
     case readCityWeather(String)
+    case readForecastWeather(String)
 }
 
 extension NetworkServices: TargetType {
     var baseURL: URL {
-        return URL(string: "https://api.openweathermap.org")!
+        return URL(string: Network_Constant.BASE_URL)!
     }
     
     var path: String {
         switch self {
         case .readCityWeather(_):
-            return "/data/2.5/weather"
+            return Network_Constant.WEATHER_PATH
+        case .readForecastWeather(_):
+            return Network_Constant.FORECAST_PATH
         }
     }
     
@@ -32,7 +35,10 @@ extension NetworkServices: TargetType {
     var task: Moya.Task {
         switch self {
         case .readCityWeather(let city):
-            return .requestParameters(parameters: ["q" : city , "appid" : "b7f1d80b093cadc7f43148b44aeb0060"]
+            return .requestParameters(parameters:Network_Constant.PARAMETER(cityName: city)
+                                      , encoding: URLEncoding.default)
+        case .readForecastWeather(let city):
+            return .requestParameters(parameters:Network_Constant.PARAMETER(cityName: city)
                                       , encoding: URLEncoding.default)
         }
     }

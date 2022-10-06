@@ -17,6 +17,10 @@
 		742AD83028EBA0C700AF0FC2 /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742AD82E28EBA0C700AF0FC2 /* CountryCell.xib */; };
 		742AD83228EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AD83128EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift */; };
 		742AD83528EBB45C00AF0FC2 /* CountryStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AD83428EBB45C00AF0FC2 /* CountryStr.swift */; };
+		7448D03B28EE9BC1007CA905 /* WeatherPresentedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448D03928EE9BC1007CA905 /* WeatherPresentedCell.swift */; };
+		7448D03C28EE9BC1007CA905 /* WeatherPresentedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7448D03A28EE9BC1007CA905 /* WeatherPresentedCell.xib */; };
+		744EFCE628EF7A0000A6519E /* CurrentForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EFCE428EF7A0000A6519E /* CurrentForecastCell.swift */; };
+		744EFCE728EF7A0000A6519E /* CurrentForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744EFCE528EF7A0000A6519E /* CurrentForecastCell.xib */; };
 		7451D62A28E981AE00CB21C2 /* TTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7451D62928E981AE00CB21C2 /* TTView.swift */; };
 		7469F3DB28E8C4E500ABB804 /* TwitterLoginRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469F3DA28E8C4E500ABB804 /* TwitterLoginRepo.swift */; };
 		7469F3DF28E8C51F00ABB804 /* TwitterLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469F3DE28E8C51F00ABB804 /* TwitterLoginUseCase.swift */; };
@@ -61,6 +65,10 @@
 		742AD82E28EBA0C700AF0FC2 /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
 		742AD83128EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostionalFlowLayOut.swift; sourceTree = "<group>"; };
 		742AD83428EBB45C00AF0FC2 /* CountryStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStr.swift; sourceTree = "<group>"; };
+		7448D03928EE9BC1007CA905 /* WeatherPresentedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresentedCell.swift; sourceTree = "<group>"; };
+		7448D03A28EE9BC1007CA905 /* WeatherPresentedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherPresentedCell.xib; sourceTree = "<group>"; };
+		744EFCE428EF7A0000A6519E /* CurrentForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentForecastCell.swift; sourceTree = "<group>"; };
+		744EFCE528EF7A0000A6519E /* CurrentForecastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentForecastCell.xib; sourceTree = "<group>"; };
 		7451D62928E981AE00CB21C2 /* TTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTView.swift; sourceTree = "<group>"; };
 		7469F3DA28E8C4E500ABB804 /* TwitterLoginRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLoginRepo.swift; sourceTree = "<group>"; };
 		7469F3DE28E8C51F00ABB804 /* TwitterLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLoginUseCase.swift; sourceTree = "<group>"; };
@@ -263,6 +271,7 @@
 		742AD84228EBE3C900AF0FC2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7448D03628EE9B89007CA905 /* Cell */,
 				74A0F4F028EC379B008CD955 /* WeatherVIewController.swift */,
 				7495F9AC28EE156100383548 /* WeatherView.swift */,
 			);
@@ -293,6 +302,17 @@
 				742AD81228EB23EE00AF0FC2 /* Data */,
 			);
 			path = InterestedCountry;
+			sourceTree = "<group>";
+		};
+		7448D03628EE9B89007CA905 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7448D03928EE9BC1007CA905 /* WeatherPresentedCell.swift */,
+				7448D03A28EE9BC1007CA905 /* WeatherPresentedCell.xib */,
+				744EFCE428EF7A0000A6519E /* CurrentForecastCell.swift */,
+				744EFCE528EF7A0000A6519E /* CurrentForecastCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		7451D62328E9815000CB21C2 /* CustomViews */ = {
@@ -543,7 +563,7 @@
 				74EEACBD28E8C2D60001ED97 /* Frameworks */,
 				74EEACBE28E8C2D60001ED97 /* Resources */,
 				7B91F09F97B2895B3AE3F41B /* [CP] Embed Pods Frameworks */,
-				6EE30FBC9923042CF4013896 /* [CP] Copy Pods Resources */,
+				A5079466D42AB74BFF9D63B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -593,8 +613,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				742AD83028EBA0C700AF0FC2 /* CountryCell.xib in Resources */,
+				744EFCE728EF7A0000A6519E /* CurrentForecastCell.xib in Resources */,
 				74EEACD028E8C2D80001ED97 /* LaunchScreen.storyboard in Resources */,
 				74EEACCD28E8C2D80001ED97 /* Assets.xcassets in Resources */,
+				7448D03C28EE9BC1007CA905 /* WeatherPresentedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,23 +645,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6EE30FBC9923042CF4013896 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7B91F09F97B2895B3AE3F41B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -655,6 +660,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5079466D42AB74BFF9D63B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -683,6 +705,7 @@
 				7469F3E528E8C7B600ABB804 /* TwitterLoginViewController.swift in Sources */,
 				7469F3E128E8C53A00ABB804 /* TwitterLoginRepoImplementaion.swift in Sources */,
 				74EEACC628E8C2D60001ED97 /* SceneDelegate.swift in Sources */,
+				7448D03B28EE9BC1007CA905 /* WeatherPresentedCell.swift in Sources */,
 				742AD83228EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift in Sources */,
 				742AD83528EBB45C00AF0FC2 /* CountryStr.swift in Sources */,
 				74A0F4F328EC37C0008CD955 /* WeatherViewModel.swift in Sources */,
@@ -699,6 +722,7 @@
 				74A6CC6F28E9BBBB006F5DF7 /* TTLabel.swift in Sources */,
 				74815A0A28E9822200DAB0DF /* TTStackView.swift in Sources */,
 				742AD82028EB252900AF0FC2 /* InterestedCountryVIewController.swift in Sources */,
+				744EFCE628EF7A0000A6519E /* CurrentForecastCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

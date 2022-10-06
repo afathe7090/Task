@@ -9,7 +9,7 @@ target 'Task' do
 
 pod 'SnapKit'
 pod 'CombineCocoa'
-pod 'TwitterKit', '~> 3.3.0'
+pod 'TwitterKit'
 pod 'IQKeyboardManagerSwift', '6.3.0'
 pod 'Moya/Combine', '~> 15.0'
 
