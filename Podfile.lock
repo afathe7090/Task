@@ -1,24 +1,42 @@
 PODS:
+  - Alamofire (5.6.2)
   - CombineCocoa (0.4.0)
   - IQKeyboardManagerSwift (6.3.0)
+  - Moya/Combine (15.0.0):
+    - Moya/Core
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
   - SnapKit (5.6.0)
+  - TwitterCore (3.2.0)
+  - TwitterKit (3.3.0):
+    - TwitterCore (>= 3.1.0)
 
 DEPENDENCIES:
   - CombineCocoa
   - IQKeyboardManagerSwift (= 6.3.0)
+  - Moya/Combine (~> 15.0)
   - SnapKit
+  - TwitterKit (~> 3.3.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - CombineCocoa
     - IQKeyboardManagerSwift
+    - Moya
     - SnapKit
+    - TwitterCore
+    - TwitterKit
 
 SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   CombineCocoa: 68a050228ce7c53c1c5ac2c57cccf92a7f5c5085
   IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
+  TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
 
-PODFILE CHECKSUM: e43d89280892ca107915cdcfabe995ac0faea993
+PODFILE CHECKSUM: 62886a9ddc21d28c6a870326c8bf6ba5100ee3c5
 
 COCOAPODS: 1.11.3

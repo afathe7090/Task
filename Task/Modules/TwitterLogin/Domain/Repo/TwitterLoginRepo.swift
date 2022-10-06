@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import TwitterKit
 
 protocol TwitterLoginRepo {
-    
+    func twitterSignInAuthintication() async throws -> TWTRSession
 }

@@ -9,12 +9,13 @@ import UIKit
 import Combine
 import CombineCocoa
 import IQKeyboardManagerSwift
+import TwitterKit
 
 class TwitterLoginViewController: UIViewController{
     
     
     private let viewModel: TwitterLoginViewModelProtocol
-        
+    
     
     //-----------------------------------------------------------------------------------
     //=======>MARK: -  MainView
@@ -53,7 +54,7 @@ class TwitterLoginViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("in ViewDidload")
+        confirmBindingCasses()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,6 +72,22 @@ class TwitterLoginViewController: UIViewController{
     //=======>MARK: -   Helper Function
     //-----------------------------------------------------------------------------------
     
+    fileprivate func confirmBindingCasses(){
+        
+        viewModel.input.bindingViewControllerCases.sink { cases in
+            switch cases{
+            case .showHUD:
+                print("Show Hud")
+            case .dismissHud:
+                print("Dismess Hud")
+            case .goHome:
+                print("Go home")
+            }
+        }.store(in: &cancellable)
+        
+        
+        
+    }
     
     
     
@@ -79,10 +96,9 @@ class TwitterLoginViewController: UIViewController{
 
 extension TwitterLoginViewController: TwitterViewDelegate {
     func didTapLoginPublisher(_ tap: AnyPublisher<Void, Never>) {
-        tap.sink(receiveValue: { _ in
-            let interectedViewController = InterestedCountryVIewController()
-            interectedViewController.modalPresentationStyle = .fullScreen
-            self.present(interectedViewController, animated: true)
+        tap.sink(receiveValue: { [weak self] _ in
+            guard let self = self else { return }
+            self.viewModel.twitterSignInAuthintication()
         }).store(in: &cancellable)
     }
     

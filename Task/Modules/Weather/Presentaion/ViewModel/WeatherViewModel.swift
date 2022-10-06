@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import TwitterKit
 
 protocol WeatherViewModelProtocol: AnyObject {
     var input: WeatherViewModel.Input { get }
