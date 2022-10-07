@@ -32,9 +32,9 @@
         
      Notes: 
         when login with twitter, their are bugs in some version
-        
-        issues: 
-  https://github.com/twitter-archive/twitter-kit-ios/issues/17
+ 
+## Twitter Issues
+https://github.com/twitter-archive/twitter-kit-ios/issues/17
         
         
 
