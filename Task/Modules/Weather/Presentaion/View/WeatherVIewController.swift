@@ -21,7 +21,7 @@ class WeatherViewController: UIViewController  {
     
     private lazy var mainView: WeatherView = {
         let view = WeatherView(delegate: self)
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         return view
     }()
     
@@ -76,9 +76,13 @@ extension WeatherViewController: WeatherViewDelegate{
 
     
     func currentUserLocation(_ location: String) {
-        mainView.titleForecastCitties.text = "Forecast Weather \(location)"
-        viewModel.input.currentLocation = location
-        mainView.tableView.reloadData()
+        if (viewModel.output.forecaset.value.count) / 2 <= 5 {
+            mainView.titleForecastCitties.text = "Forecast Weather \(location)"
+            viewModel.input.currentLocation = location
+            mainView.tableView.reloadData()
+        }
+        
+        
     }
     
     //-----------------------------------------------------------------------------------
@@ -86,7 +90,10 @@ extension WeatherViewController: WeatherViewDelegate{
     //-----------------------------------------------------------------------------------
     
     func tableViewNumberOfRows() -> Int {
-        return (viewModel.output.forecaset.value.count) / 2
+        
+        if (viewModel.output.forecaset.value.count) / 2 >= 5 {
+            return 5
+        }else{ return 0 }
     }
     
     func tableViewCellRowAt(_ cell: CurrentForecastCell, for indexPath: IndexPath) {
