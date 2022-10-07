@@ -10,4 +10,5 @@ import Moya
 
 protocol WeatherRepo{
     func readWeatherCity(city: String)-> AnyPublisher<WeatherCity, MoyaError>
+    func readWeatherForecastCity(city: String)-> AnyPublisher<ForecastCity, MoyaError>
 }

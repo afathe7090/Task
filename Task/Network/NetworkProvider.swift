@@ -10,6 +10,7 @@ import Moya
 
 protocol NetworkProviderRepo {
     func readWeatherCity(city: String)-> AnyPublisher<WeatherCity, MoyaError>
+    func readForecasetWeather(city: String) -> AnyPublisher<ForecastCity, MoyaError> 
 }
 
 class NetworkProviderImple:  NetworkProviderRepo{

@@ -23,7 +23,7 @@ class WeatherViewModel: WeatherViewModelProtocol,ViewModelType {
     class Input{
         @Published var cities: [String] = ["Egypt"]
         @Published var currentLocation: String = ""
-        var weatherForcastes: [[WeatherCity]] = []
+        var progressPublisher: PassthroughSubject<Bool, Never> = PassthroughSubject()
     }
     
     class Output{
@@ -52,11 +52,15 @@ class WeatherViewModel: WeatherViewModelProtocol,ViewModelType {
     //=======>MARK: - Interested CollectionView
     //-----------------------------------------------------------------------------------
     func setupInterestedCollectionViewWeather(_ cell : WeatherPresentedCell, for indexPath: IndexPath){
+        
+        input.progressPublisher.send(true)
         useCase.readWeatherCity(city: input.cities[indexPath.row])
             .sink { error in
                 print(error)
-            } receiveValue: { weatherCity in
+            } receiveValue: {[weak self] weatherCity in
+                guard let self = self else { return }
                 cell.loadWeatherView(weatherCity)
+                self.input.progressPublisher.send(false)
             }.store(in: &cancellable)
     }
     
@@ -66,14 +70,16 @@ class WeatherViewModel: WeatherViewModelProtocol,ViewModelType {
     //=======>MARK: -  FetchForecast Weeather
     //-----------------------------------------------------------------------------------
     func fetchWeatherForecast(city: String){
-        let netwok = NetworkProviderImple()
-        netwok.readForecasetWeather(city: input.currentLocation)
+        input.progressPublisher.send(true)
+        useCase.readForecasetWeather(city: input.currentLocation)
             .map({$0.list})
             .sink { error in
                 print(error)
-            } receiveValue: { forecaset in
+            } receiveValue: {[weak self] forecaset in
+                guard let self = self else { return }
                 forecaset.publisher.map({$0}).collect(8).sink { weather in
                     self.output.forecaset.send(self.output.forecaset.value + [weather])
+                    self.input.progressPublisher.send(false)
                 }.store(in: &self.cancellable)
             }.store(in: &cancellable)
         

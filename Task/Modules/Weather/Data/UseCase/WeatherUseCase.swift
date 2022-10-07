@@ -18,4 +18,10 @@ class WeatherUseCase{
         return repo.readWeatherCity(city: city)
     }
     
+    
+    func readForecasetWeather(city: String) -> AnyPublisher<ForecastCity, MoyaError> {
+        return repo.readWeatherForecastCity(city: city)
+    }
+    
+    
 }

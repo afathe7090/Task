@@ -16,4 +16,9 @@ class WeatherRepoImplementation: WeatherRepo {
     func readWeatherCity(city: String) -> AnyPublisher<WeatherCity, MoyaError> {
         return network.readWeatherCity(city: city)
     }
+    
+    func readWeatherForecastCity(city: String) -> AnyPublisher<ForecastCity, MoyaError> {
+        return network.readForecasetWeather(city: city)
+    }
+    
 }

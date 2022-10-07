@@ -46,16 +46,20 @@ class WeatherViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.input.$currentLocation.sink { city in
+        subscripation()
+    }
+    
+    fileprivate func subscripation(){
+        viewModel.input.$currentLocation.sink {[weak self] city in
+            guard let self = self else { return }
             self.viewModel.fetchWeatherForecast(city: city)
         }.store(in: &cancellable)
                 
-        viewModel.output.forecaset.sink { wea in
-            print(wea.count)
+        viewModel.output.forecaset.sink {[weak self] wea in
+            guard let self = self else { return }
             self.mainView.tableView.reloadData()
         }.store(in: &cancellable)
     }
-    
     
     
 }
@@ -90,7 +94,6 @@ extension WeatherViewController: WeatherViewDelegate{
     //-----------------------------------------------------------------------------------
     
     func tableViewNumberOfRows() -> Int {
-        
         if (viewModel.output.forecaset.value.count) / 2 >= 5 {
             return 5
         }else{ return 0 }

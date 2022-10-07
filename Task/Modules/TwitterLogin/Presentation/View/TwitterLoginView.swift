@@ -109,26 +109,6 @@ class TwitterLoginView: UIView {
     
     
     //-----------------------------------------------------------------------------------
-    //=======>MARK: -  Fields
-    //-----------------------------------------------------------------------------------
-    
-    private let emailTextField = TTTextField(fontSiza: 17
-                                             , placeholder: "Phone, email, or username"
-                                             ,placeholderFont: .systemFont(ofSize: 17)
-                                             , placeholderColor: .darkGray)
-    private let passwordTextField = TTTextField(fontSiza: 17, placeholder: "Password"
-                                                ,placeholderFont: .systemFont(ofSize: 17)
-                                                , placeholderColor: .darkGray)
-    
-    private lazy var textFieldsStack: TTStackView = {
-        let arrangedSubView = [emailTextField, passwordTextField]
-        let separatorStack = TTStackView(arrangedSubView: arrangedSubView, spacing: 25, axis: .vertical, contentMode: .scaleToFill, alignment: .fill ,distribution: .fillEqually)
-        return separatorStack
-    }()
-    
-    
-    
-    //-----------------------------------------------------------------------------------
     //=======>MARK: -  Button
     //-----------------------------------------------------------------------------------
     
@@ -160,7 +140,6 @@ class TwitterLoginView: UIView {
         configureGoogleView()
         configureAppleView()
         configureSeparatorViews()
-        configureEmailANdPasswordView()
         configureSignINButton()
         
         delegate.didTapLoginPublisher(loginBtn.tapPublisher)
@@ -244,21 +223,12 @@ class TwitterLoginView: UIView {
             $0.height.equalTo(30)
         })
     }
-    
-    fileprivate func configureEmailANdPasswordView(){
-        containerView.addSubview(textFieldsStack)
-        textFieldsStack.snp.makeConstraints({
-            $0.top.equalTo(separatorStack.snp.bottom).offset(15)
-            $0.leading.equalTo(containerView.snp.leading).offset(20)
-            $0.trailing.equalTo(containerView.snp.trailing).offset(-20)
-        })
-        
-    }
+
     
     fileprivate func configureSignINButton(){
         containerView.addSubview(stackOfButtons)
         stackOfButtons.snp.makeConstraints({
-            $0.top.equalTo(textFieldsStack.snp.bottom).offset(15)
+            $0.top.equalTo(separatorStack.snp.bottom).offset(15)
             $0.leading.equalTo(containerView.snp.leading).offset(20)
             $0.trailing.equalTo(containerView.snp.trailing).offset(-20)
         })

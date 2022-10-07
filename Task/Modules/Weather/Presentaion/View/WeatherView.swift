@@ -49,6 +49,9 @@ class WeatherView: UIView {
     }()
     
     
+    //-----------------------------------------------------------------------------------
+    //=======>MARK: -  INit
+    //-----------------------------------------------------------------------------------
     init(delegate: WeatherViewDelegate) {
         super.init(frame: .zero)
         self.delegate = delegate
@@ -75,6 +78,10 @@ class WeatherView: UIView {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
+    
+    //-----------------------------------------------------------------------------------
+    //=======>MARK: -  Layout && Constaint
+    //-----------------------------------------------------------------------------------
     
     fileprivate func layout(){
         let defaultSection = interestedCollectionView.defaultSections(scroll: .paging, axis: .horizontal) {
@@ -130,6 +137,10 @@ class WeatherView: UIView {
     
 }
 
+
+//-----------------------------------------------------------------------------------
+//=======>MARK: -  Collection
+//-----------------------------------------------------------------------------------
 extension WeatherView: UICollectionViewDelegate , UICollectionViewDataSource{
     
     
@@ -147,13 +158,16 @@ extension WeatherView: UICollectionViewDelegate , UICollectionViewDataSource{
         return cell
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         interestedCollectionView.deselectItem(at: indexPath, animated: true)
     }
     
 }
 
+
+//-----------------------------------------------------------------------------------
+//=======>MARK: -  TableIVew
+//-----------------------------------------------------------------------------------
 
 extension WeatherView: UITableViewDelegate , UITableViewDataSource {
     
@@ -172,6 +186,9 @@ extension WeatherView: UITableViewDelegate , UITableViewDataSource {
     
 }
 
+//-----------------------------------------------------------------------------------
+//=======>MARK: -  Current User Location
+//-----------------------------------------------------------------------------------
 extension WeatherView: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

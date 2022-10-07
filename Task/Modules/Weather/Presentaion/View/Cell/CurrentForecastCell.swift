@@ -31,7 +31,9 @@ class CurrentForecastCell: UITableViewCell {
     
     
     func setCell(_ dataOfCell: [WeatherCity]){
-       dateLabel.text = dataOfCell[0].dt_txt
+        
+        let dateStr = dataOfCell[0].dt_txt!
+        dateLabel.text = changeDateFormat(dateString:dateStr , fromFormat: "yyyy-MM-dd HH:SS:00", toFormat: "dd-MM-yyyy")
         
         let speed = dataOfCell.map({$0.wind.speed}).reduce(0.0, {$0 + $1})
         speedLabel.text = String(format: "%.2f", speed / 8)

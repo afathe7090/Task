@@ -16,7 +16,6 @@
 		742AD82F28EBA0C700AF0FC2 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AD82D28EBA0C700AF0FC2 /* CountryCell.swift */; };
 		742AD83028EBA0C700AF0FC2 /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742AD82E28EBA0C700AF0FC2 /* CountryCell.xib */; };
 		742AD83228EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AD83128EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift */; };
-		742AD83528EBB45C00AF0FC2 /* CountryStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AD83428EBB45C00AF0FC2 /* CountryStr.swift */; };
 		7448D03B28EE9BC1007CA905 /* WeatherPresentedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448D03928EE9BC1007CA905 /* WeatherPresentedCell.swift */; };
 		7448D03C28EE9BC1007CA905 /* WeatherPresentedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7448D03A28EE9BC1007CA905 /* WeatherPresentedCell.xib */; };
 		744EFCE628EF7A0000A6519E /* CurrentForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EFCE428EF7A0000A6519E /* CurrentForecastCell.swift */; };
@@ -28,7 +27,6 @@
 		7469F3E328E8C58A00ABB804 /* TwitterLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469F3E228E8C58A00ABB804 /* TwitterLoginViewModel.swift */; };
 		7469F3E528E8C7B600ABB804 /* TwitterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469F3E428E8C7B600ABB804 /* TwitterLoginViewController.swift */; };
 		7469F3E728E8C8E900ABB804 /* TwitterLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469F3E628E8C8E900ABB804 /* TwitterLoginView.swift */; };
-		7469F3E828E8CFE900ABB804 /* Pods_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2974586E93B5C35A386CBE90 /* Pods_Task.framework */; };
 		74815A0828E9821800DAB0DF /* TTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0728E9821800DAB0DF /* TTButton.swift */; };
 		74815A0A28E9822200DAB0DF /* TTStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0928E9822200DAB0DF /* TTStackView.swift */; };
 		74815A0C28E9823100DAB0DF /* TTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74815A0B28E9823100DAB0DF /* TTTextField.swift */; };
@@ -46,6 +44,8 @@
 		74A6CC6F28E9BBBB006F5DF7 /* TTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6CC6E28E9BBBB006F5DF7 /* TTLabel.swift */; };
 		74A6CC7228E9BF51006F5DF7 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6CC7128E9BF51006F5DF7 /* UIFont+Ext.swift */; };
 		74A6CC7428E9C065006F5DF7 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6CC7328E9C065006F5DF7 /* UIImage+Ext.swift */; };
+		74C8851628EFE254002D335F /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C8851528EFE254002D335F /* DateFormatter.swift */; };
+		74C8851828EFE64C002D335F /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C8851728EFE64C002D335F /* ProgressHUD.swift */; };
 		74EEACC428E8C2D60001ED97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEACC328E8C2D60001ED97 /* AppDelegate.swift */; };
 		74EEACC628E8C2D60001ED97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEACC528E8C2D60001ED97 /* SceneDelegate.swift */; };
 		74EEACCD28E8C2D80001ED97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74EEACCC28E8C2D80001ED97 /* Assets.xcassets */; };
@@ -53,8 +53,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2974586E93B5C35A386CBE90 /* Pods_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47F16A2DA6E0ADC4CC3DADBD /* Pods-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task.debug.xcconfig"; path = "Target Support Files/Pods-Task/Pods-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		742AD81D28EB24A200AF0FC2 /* InterestedCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestedCountryViewModel.swift; sourceTree = "<group>"; };
 		742AD81F28EB252900AF0FC2 /* InterestedCountryVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestedCountryVIewController.swift; sourceTree = "<group>"; };
 		742AD82128EB25AB00AF0FC2 /* InterestedCountryRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestedCountryRepo.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 		742AD82D28EBA0C700AF0FC2 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		742AD82E28EBA0C700AF0FC2 /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
 		742AD83128EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostionalFlowLayOut.swift; sourceTree = "<group>"; };
-		742AD83428EBB45C00AF0FC2 /* CountryStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStr.swift; sourceTree = "<group>"; };
 		7448D03928EE9BC1007CA905 /* WeatherPresentedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresentedCell.swift; sourceTree = "<group>"; };
 		7448D03A28EE9BC1007CA905 /* WeatherPresentedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherPresentedCell.xib; sourceTree = "<group>"; };
 		744EFCE428EF7A0000A6519E /* CurrentForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentForecastCell.swift; sourceTree = "<group>"; };
@@ -93,13 +90,14 @@
 		74A6CC6E28E9BBBB006F5DF7 /* TTLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTLabel.swift; sourceTree = "<group>"; };
 		74A6CC7128E9BF51006F5DF7 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
 		74A6CC7328E9C065006F5DF7 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		74C8851528EFE254002D335F /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		74C8851728EFE64C002D335F /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		74EEACC028E8C2D60001ED97 /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EEACC328E8C2D60001ED97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74EEACC528E8C2D60001ED97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		74EEACCC28E8C2D80001ED97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74EEACCF28E8C2D80001ED97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74EEACD128E8C2D80001ED97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D708F5772E8E7CF992420E27 /* Pods-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task.release.xcconfig"; path = "Target Support Files/Pods-Task/Pods-Task.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7469F3E828E8CFE900ABB804 /* Pods_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +199,7 @@
 		742AD83328EBB44D00AF0FC2 /* Utilis */ = {
 			isa = PBXGroup;
 			children = (
-				742AD83428EBB45C00AF0FC2 /* CountryStr.swift */,
+				74C8851728EFE64C002D335F /* ProgressHUD.swift */,
 			);
 			path = Utilis;
 			sourceTree = "<group>";
@@ -497,6 +494,7 @@
 				74A6CC7128E9BF51006F5DF7 /* UIFont+Ext.swift */,
 				74A6CC7328E9C065006F5DF7 /* UIImage+Ext.swift */,
 				742AD83128EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift */,
+				74C8851528EFE254002D335F /* DateFormatter.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -506,8 +504,6 @@
 			children = (
 				74EEACC228E8C2D60001ED97 /* Task */,
 				74EEACC128E8C2D60001ED97 /* Products */,
-				B42E6EF0DE437CD3F26CFABA /* Pods */,
-				C70787B2CA887B3A7F2C663B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -534,23 +530,6 @@
 			path = Task;
 			sourceTree = "<group>";
 		};
-		B42E6EF0DE437CD3F26CFABA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				47F16A2DA6E0ADC4CC3DADBD /* Pods-Task.debug.xcconfig */,
-				D708F5772E8E7CF992420E27 /* Pods-Task.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		C70787B2CA887B3A7F2C663B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2974586E93B5C35A386CBE90 /* Pods_Task.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -558,12 +537,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74EEACD428E8C2D80001ED97 /* Build configuration list for PBXNativeTarget "Task" */;
 			buildPhases = (
-				4C446E086CADD86EF0605124 /* [CP] Check Pods Manifest.lock */,
 				74EEACBC28E8C2D60001ED97 /* Sources */,
 				74EEACBD28E8C2D60001ED97 /* Frameworks */,
 				74EEACBE28E8C2D60001ED97 /* Resources */,
-				7B91F09F97B2895B3AE3F41B /* [CP] Embed Pods Frameworks */,
-				A5079466D42AB74BFF9D63B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -622,65 +598,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4C446E086CADD86EF0605124 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Task-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7B91F09F97B2895B3AE3F41B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A5079466D42AB74BFF9D63B0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Task/Pods-Task-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		74EEACBC28E8C2D60001ED97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -688,6 +605,7 @@
 			files = (
 				7469F3E728E8C8E900ABB804 /* TwitterLoginView.swift in Sources */,
 				74A0F4F928EC387B008CD955 /* WeatherUseCase.swift in Sources */,
+				74C8851828EFE64C002D335F /* ProgressHUD.swift in Sources */,
 				742AD82228EB25AB00AF0FC2 /* InterestedCountryRepo.swift in Sources */,
 				74A0F4F728EC3855008CD955 /* WeatherRepoImplementation.swift in Sources */,
 				74A0F4F528EC3833008CD955 /* WeatherRepo.swift in Sources */,
@@ -707,9 +625,9 @@
 				74EEACC628E8C2D60001ED97 /* SceneDelegate.swift in Sources */,
 				7448D03B28EE9BC1007CA905 /* WeatherPresentedCell.swift in Sources */,
 				742AD83228EBAF3800AF0FC2 /* CompostionalFlowLayOut.swift in Sources */,
-				742AD83528EBB45C00AF0FC2 /* CountryStr.swift in Sources */,
 				74A0F4F328EC37C0008CD955 /* WeatherViewModel.swift in Sources */,
 				74A6CC7428E9C065006F5DF7 /* UIImage+Ext.swift in Sources */,
+				74C8851628EFE254002D335F /* DateFormatter.swift in Sources */,
 				742AD82628EB25D200AF0FC2 /* InterestedCountryRepoImple.swift in Sources */,
 				742AD81E28EB24A200AF0FC2 /* InterestedCountryViewModel.swift in Sources */,
 				74A0F4FB28EC38A2008CD955 /* Weather.swift in Sources */,
@@ -856,7 +774,6 @@
 		};
 		74EEACD528E8C2D80001ED97 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47F16A2DA6E0ADC4CC3DADBD /* Pods-Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -888,7 +805,6 @@
 		};
 		74EEACD628E8C2D80001ED97 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D708F5772E8E7CF992420E27 /* Pods-Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
