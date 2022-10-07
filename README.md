@@ -29,11 +29,11 @@
 
         First screen is login screen that can authentication by twitter account and login to next screen 
         
-        
-     Notes: 
-        when login with twitter, their are bugs in some version
+     
  
-## Twitter Issues
+##  Notes:  Twitter Issues 
+   
+    when login with twitter, their are bugs in some version
 https://github.com/twitter-archive/twitter-kit-ios/issues/17
         
         
