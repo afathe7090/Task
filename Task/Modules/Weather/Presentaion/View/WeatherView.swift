@@ -36,10 +36,10 @@ class WeatherView: UIView {
     }()
     
     
-    let titleForecastCitties = TTLabel(text: "Forecast Weather", numberOfLines: 1, font: .boldSystemFont(ofSize: 30), textAlignment: .left, textColor: .label)
+    let titleForecastCitties = TTLabel(text: "Forecast Weather", numberOfLines: 1, font: .boldSystemFont(ofSize: 20), textAlignment: .left, textColor: .label)
     
     
-    private lazy var tableView: UITableView = {
+    lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(UINib(nibName: CurrentForecastCell.cellID, bundle: nil)
                            , forCellReuseIdentifier: CurrentForecastCell.cellID)

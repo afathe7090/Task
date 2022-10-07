@@ -46,7 +46,14 @@ class WeatherViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewModel.input.$currentLocation.sink { city in
+            self.viewModel.fetchWeatherForecast(city: city)
+        }.store(in: &cancellable)
+                
+        viewModel.output.forecaset.sink { wea in
+            print(wea.count)
+            self.mainView.tableView.reloadData()
+        }.store(in: &cancellable)
     }
     
     
@@ -70,7 +77,8 @@ extension WeatherViewController: WeatherViewDelegate{
     
     func currentUserLocation(_ location: String) {
         mainView.titleForecastCitties.text = "Forecast Weather \(location)"
-        viewModel.input.currentLocation.send(location)
+        viewModel.input.currentLocation = location
+        mainView.tableView.reloadData()
     }
     
     //-----------------------------------------------------------------------------------
@@ -78,7 +86,7 @@ extension WeatherViewController: WeatherViewDelegate{
     //-----------------------------------------------------------------------------------
     
     func tableViewNumberOfRows() -> Int {
-        return viewModel.output.forecaset.value.count
+        return (viewModel.output.forecaset.value.count) / 2
     }
     
     func tableViewCellRowAt(_ cell: CurrentForecastCell, for indexPath: IndexPath) {
