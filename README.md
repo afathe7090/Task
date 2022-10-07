@@ -53,6 +53,20 @@ https://github.com/twitter-archive/twitter-kit-ios/issues/17
 
 
 
+## Weather Screen
 
+
+        In this screen we will show the weather of interested Cities from user 
+        and current location weather forecast
+        
+![Screen Shot 2022-10-07 at 6 56 14 PM](https://user-images.githubusercontent.com/76500072/194610738-efad33d1-8b4a-4db2-876b-5f30bebc9c13.png)
+
+
+# Video
+
+https://user-images.githubusercontent.com/76500072/194579629-5fac2804-32b6-42aa-8b60-2675a450012d.MP4
+
+                
+        
 
 
